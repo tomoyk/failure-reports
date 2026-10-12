@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-12T08:58:21+00:00",
+ "generatedAt": "2026-10-12T09:36:35+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
