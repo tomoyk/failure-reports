@@ -10,6 +10,8 @@ Web系システムの障害レポートを収集・分析するためのプロ�
 
 - `incident_scraper.py` - スプレッドシート全行を取得するスクレイピング実装
 - `scrape_incidents.py` - 互換用エントリーポイント
+- `export_site_data.py` - SQLiteから公開サイト用データ(`docs/data/incidents.js`)を書き出す
+- `docs/` - 公開用の静的サイト(HTML / CSS / JavaScript。ビルド不要)
 - `incidents.sqlite` - 障害データを保存したSQLiteデータベース
 - `DATABASE_USAGE.md` - データベースの使用方法ガイド
 
@@ -42,6 +44,21 @@ python3 scrape_incidents.py
 - 403/404などで直接取得できない場合は Wayback Machine から取得し、その旨を `scrape_error` に記録(`scrape_status` は `success`)
 - スプレッドシートにURLが無い行は `incident_scraper.py` の `SUPPLEMENTAL_SOURCES` で補う
 - タイトルが空の行が1件でも残る場合はエラー終了し、DBは更新しない
+
+### Webページの公開
+
+`docs/` に静的サイトがあります。データの更新後は次のコマンドでサイト用データを作り直します。
+
+```bash
+python3 scrape_incidents.py     # DBを再生成
+python3 export_site_data.py     # docs/data/incidents.js を更新
+```
+
+ローカルで確認する場合は `python3 -m http.server -d docs` を実行し、`http://localhost:8000/` を開きます(`docs/index.html` を直接開いても動作します)。
+
+GitHub Pages で公開する場合は、リポジトリの Settings → Pages で Source を「Deploy from a branch」、Branch を `main` / `/docs` に設定します。
+
+サイトの機能: キーワード検索、サービス・発生年・引き金での絞り込み(グラフのクリックでも可)、並べ替え、詳細表示、ライト/ダークテーマ。絞り込み条件はURLに保存されるため、そのまま共有できます。
 
 ### データベースの確認
 
