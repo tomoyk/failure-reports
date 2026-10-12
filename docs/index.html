@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Failure Reports | Web系システム障害レポート集</title>
+  <meta name="description" content="AWS、Cloudflare、GitHubなど、Web系サービスで発生した障害の公開レポートを、原因・分類・発生時期から探せるデータベースです。">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%234f46e5'/%3E%3Cpath d='M16 7l10 18H6z' fill='none' stroke='white' stroke-width='2.4' stroke-linejoin='round'/%3E%3Cpath d='M16 14v5' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='22' r='1.3' fill='white'/%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("theme"); } catch (e) {}
+      if (saved === "light" || saved === "dark") {
+        document.documentElement.dataset.theme = saved;
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="data/incidents.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">検索結果へ移動</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Failure Reports トップ">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32"></rect>
+          <path d="M16 7l10 18H6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"></path>
+          <path d="M16 14v5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+          <circle cx="16" cy="22" r="1.3" fill="currentColor"></circle>
+        </svg>
+        <span>Failure Reports</span>
+      </a>
+      <nav class="header-actions" aria-label="サイトメニュー">
+        <a class="link-button" href="https://github.com/tomoyk/failure-reports" rel="noopener">GitHub</a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="テーマを切り替え">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M5.2 18.8l1.6-1.6M17.2 6.8l1.6-1.6"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"></path></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Postmortem Collection</p>
+      <h1>Web系システム障害レポート集</h1>
+      <p class="lead">公開されている障害報告を集め、原因と分類を整理しました。過去の障害から、同じ失敗を繰り返さないための学びを探せます。</p>
+      <dl class="stats" id="stats" aria-label="収録データの概要"></dl>
+    </div>
+  </section>
+
+  <section class="container insights" aria-labelledby="insights-heading">
+    <h2 id="insights-heading" class="visually-hidden">件数の内訳</h2>
+    <div class="panel">
+      <h3>障害の引き金</h3>
+      <p class="panel-note">クリックで絞り込み</p>
+      <ul class="bars" id="trigger-bars"></ul>
+    </div>
+    <div class="panel">
+      <h3>発生年</h3>
+      <p class="panel-note">クリックで絞り込み</p>
+      <ul class="columns" id="year-columns"></ul>
+    </div>
+  </section>
+
+  <section class="container controls-wrap" aria-labelledby="search-heading">
+    <h2 id="search-heading" class="visually-hidden">検索と絞り込み</h2>
+    <form class="controls" id="controls" role="search" autocomplete="off">
+      <div class="field field-search">
+        <label for="q">キーワード</label>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16l5 5"></path></svg>
+          <input id="q" name="q" type="search" placeholder="タイトル、サービス名、原因など" enterkeyhint="search">
+        </div>
+      </div>
+      <div class="field">
+        <label for="provider">サービス</label>
+        <select id="provider" name="provider"></select>
+      </div>
+      <div class="field">
+        <label for="year">発生年</label>
+        <select id="year" name="year"></select>
+      </div>
+      <div class="field">
+        <label for="sort">並び順</label>
+        <select id="sort" name="sort">
+          <option value="date-desc">発生日が新しい順</option>
+          <option value="date-asc">発生日が古い順</option>
+          <option value="provider">サービス名順</option>
+        </select>
+      </div>
+      <label class="check" for="analyzed">
+        <input id="analyzed" name="analyzed" type="checkbox">
+        <span>原因分析があるものだけ</span>
+      </label>
+    </form>
+    <div class="chips" id="trigger-chips" role="group" aria-label="障害の引き金で絞り込み"></div>
+  </section>
+
+  <main class="container results" id="results" tabindex="-1">
+    <div class="results-bar">
+      <p class="count" id="count" role="status" aria-live="polite"></p>
+      <button class="text-button" id="reset" type="button" hidden>条件をリセット</button>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="empty" id="empty" hidden>
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="22" cy="22" r="12"></circle><path d="M31 31l10 10"></path><path d="M17 22h10"></path></svg>
+      <p>条件に合う障害レポートは見つかりませんでした。</p>
+      <button class="primary-button" id="empty-reset" type="button">条件をリセット</button>
+    </div>
+  </main>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <article class="detail" id="detail-body" tabindex="-1"></article>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>元データは<a href="https://docs.google.com/spreadsheets/d/1kt1Rz-DtPSf0faz_EICI50sYWglEy1-LGBRq57X58J0/edit?gid=0#gid=0" rel="noopener">Googleスプレッドシート</a>で管理し、各記事のタイトルは出典ページから自動取得しています。</p>
+      <p>記事の内容・著作権は各公開元に帰属します。<span id="generated"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
