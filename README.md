@@ -29,11 +29,19 @@ https://docs.google.com/spreadsheets/d/1kt1Rz-DtPSf0faz_EICI50sYWglEy1-LGBRq57X5
 
 ```bash
 # 必要なパッケージをインストール
-pip install requests beautifulsoup4
+pip install requests beautifulsoup4 pypdf
 
 # スプレッドシートを再取得し、DBを置き換える
 python3 scrape_incidents.py
 ```
+
+スクレイピングは次の方針で `scraped_title` を必ず埋めます。
+
+- `Source (original)` → `Source 2 (original)` → `Articles` / `Provider` 列内のURLの順に候補を試し、タイトルが取れた最初のURLを `scraped_url` に記録
+- タイトルは `og:title` → `twitter:title` → `<title>` → `<h1>` の順、PDFはメタデータまたは先頭の見出し
+- 403/404などで直接取得できない場合は Wayback Machine から取得し、その旨を `scrape_error` に記録(`scrape_status` は `success`)
+- スプレッドシートにURLが無い行は `incident_scraper.py` の `SUPPLEMENTAL_SOURCES` で補う
+- タイトルが空の行が1件でも残る場合はエラー終了し、DBは更新しない
 
 ### データベースの確認
 
