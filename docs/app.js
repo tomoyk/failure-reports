@@ -131,7 +131,8 @@
       return key === NONE ? !incident.triggers.length : incident.triggers.indexOf(key) !== -1;
     }).length;
   });
-  var triggerOrder = triggerKeys.slice().sort(function (a, b) { return triggerCounts[b] - triggerCounts[a]; }).concat([NONE]);
+  var triggerOrder = triggerKeys.slice().sort(function (a, b) { return triggerCounts[b] - triggerCounts[a]; });
+  if (triggerCounts[NONE]) triggerOrder.push(NONE);
 
   var years = incidents.map(function (incident) { return incident.year; }).filter(Boolean);
   var minYear = Math.min.apply(null, years);
