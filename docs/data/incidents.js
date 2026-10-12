@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-12T08:32:39+00:00",
+ "generatedAt": "2026-10-12T08:58:21+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -744,7 +744,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -762,7 +764,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -780,7 +784,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -798,7 +804,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -816,7 +824,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -834,7 +844,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -852,7 +865,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -870,7 +886,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -888,7 +907,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "2020年6月10日 午前6時55分頃、外部のネットワークプロバイダーが誤ったルート広告（ルーター間での経路情報の通知）を行ったため、インターネットのトラフィックに深刻な影響が発生しました。これにより、IBM Cloudのインターネット・ネットワークに障害が発生しました。これは、東京リージョンのデータセンターだけではなくIBM Cloudの複数のデータセンターに以下のような影響を及ぼしました。",
@@ -906,7 +927,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -924,7 +948,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -942,7 +968,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -960,7 +988,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -978,7 +1008,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -996,7 +1028,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1014,7 +1048,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1032,7 +1069,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1050,7 +1089,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1068,7 +1110,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1086,7 +1130,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1104,7 +1151,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1122,7 +1171,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1140,7 +1191,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -1158,7 +1212,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-11-16",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -1176,7 +1232,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "What really happened on Mars? -- Authoritative Account",
    "rootCause": "",
@@ -1194,7 +1252,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-10-30",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare incident on October 30, 2023",
    "rootCause": "",
@@ -1212,7 +1272,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-11-12",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -1230,7 +1292,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-02-15",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Sleeping beauty - How one of the oldest bugs in EVE got hunted down and resolved | EVE Online",
    "rootCause": "",
@@ -1248,7 +1312,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "April 2022 Incident Review",
    "rootCause": "",
@@ -1266,7 +1332,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: July 2020",
    "rootCause": "",
@@ -1284,8 +1353,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "本文を取得できず、引き金を特定できない",
    "summary": "Salesforce Help",
    "rootCause": "",
    "extraUrl": "",
@@ -1302,7 +1373,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: September 2023",
    "rootCause": "",
@@ -1320,8 +1394,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "複数のインシデントをまとめた履歴ページ",
    "summary": "Azure の状態の履歴 | Microsoft Azure",
    "rootCause": "",
    "extraUrl": "",
@@ -1338,7 +1414,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Retrospective and Technical Details on the recent Firefox Outage – Mozilla Hacks - the Web developer blog",
    "rootCause": "",
@@ -1356,7 +1434,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: October 2022",
    "rootCause": "",
@@ -1374,7 +1454,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: May 2022",
    "rootCause": "",
@@ -1392,8 +1474,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "Engineering Archives",
    "rootCause": "",
    "extraUrl": "",
@@ -1410,7 +1494,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Job Failure"
+   ],
    "triggerNote": "",
    "summary": "Postmortem: March 26 - April 10 Workflow Delay Incidents",
    "rootCause": "",
@@ -1428,7 +1514,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: August 2025",
    "rootCause": "",
@@ -1446,7 +1535,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Postmortem of database outage of January 31",
    "rootCause": "",
@@ -1464,7 +1555,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2022",
    "rootCause": "",
@@ -1482,7 +1575,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Denial of Service Attacks",
    "rootCause": "",
@@ -1500,7 +1595,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Add-Ons Outage Post-Mortem Result – Mozilla Hacks - the Web developer blog",
    "rootCause": "",
@@ -1518,7 +1615,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Addressing GitHub’s recent availability issues",
    "rootCause": "",
@@ -1536,7 +1636,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "2013–09–17 Outage Postmortem",
    "rootCause": "",
@@ -1554,7 +1656,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-02-19",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Incident report on memory leak caused by Cloudflare parser bug",
    "rootCause": "",
@@ -1572,7 +1676,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Reddit - The heart of the internet",
    "rootCause": "",
@@ -1590,7 +1697,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-09-13",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -1608,7 +1718,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-08-06",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Falcon Content Update Remediation and Guidance Hub | CrowdStrike",
    "rootCause": "",
@@ -1626,7 +1738,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage on December 5, 2025",
    "rootCause": "",
@@ -1644,7 +1758,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage on November 18, 2025",
    "rootCause": "",
@@ -1662,7 +1779,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Linux build queue backing up",
    "rootCause": "",
@@ -1680,7 +1799,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Today's Network Issue",
    "rootCause": "",
@@ -1698,7 +1819,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "米国東部（バージニア北部、US-EAST-1）リージョンで発生した Amazon S3 サービス障害について",
    "rootCause": "",
@@ -1716,7 +1839,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Battling database performance | Blog | incident.io",
    "rootCause": "",
@@ -1734,7 +1859,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: July 2024",
    "rootCause": "",
@@ -1752,7 +1879,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: August 2021",
    "rootCause": "",
@@ -1770,7 +1900,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Summary of the December 17th event in the South America Region (SA-EAST-1)",
    "rootCause": "",
@@ -1788,7 +1920,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Heroku Status",
    "rootCause": "",
@@ -1806,7 +1940,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "The Day of the RDS Multi-AZ Failover - Razorpay Tech",
    "rootCause": "",
@@ -1824,7 +1960,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: April 2023",
    "rootCause": "",
@@ -1842,7 +1980,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "RFC 789: Vulnerabilities of network control protocols: An example",
    "rootCause": "",
@@ -1860,7 +2000,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: May 2026",
    "rootCause": "",
@@ -1878,7 +2020,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Slack’s Outage on January 4th 2021",
    "rootCause": "",
@@ -1896,7 +2040,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Azure Front Door: Implementing lessons learned following October outages | Microsoft Community Hub",
    "rootCause": "",
@@ -1914,7 +2060,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-10-13",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -1932,7 +2081,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Today's Outage Post Mortem",
    "rootCause": "",
@@ -1950,7 +2101,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare’s investigation of the January 2022 Okta compromise",
    "rootCause": "",
@@ -1968,7 +2121,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "DNS issues in Kubernetes. Public postmortem #1",
    "rootCause": "",
@@ -1986,7 +2141,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Summary of Windows Azure Service Disruption on Feb 29th, 2012 | Microsoft Azure Blog",
    "rootCause": "",
@@ -2004,7 +2161,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon EC2 and Amazon RDS Service Disruption in the US East Region",
    "rootCause": "",
@@ -2022,7 +2182,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Summary of the December 24, 2012 Amazon ELB Service Event in the US-East Region",
    "rootCause": "",
@@ -2040,7 +2203,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: July 2025",
    "rootCause": "",
@@ -2058,7 +2224,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Intermittent downtime from repeated crashes | Blog | incident.io",
    "rootCause": "",
@@ -2076,7 +2244,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Job Failure"
+   ],
    "triggerNote": "",
    "summary": "Postmortem: May 21, 2021 - Delay in starting Docker Jobs. Machine & remote Docker environments blocked",
    "rootCause": "",
@@ -2094,8 +2264,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "この月はサービス停止を伴うインシデントは報告されていない",
    "summary": "GitHub Availability Report: August 2020",
    "rootCause": "",
    "extraUrl": "",
@@ -2112,7 +2284,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "1.1.1.1 lookup failures on October 4, 2023",
    "rootCause": "",
@@ -2130,7 +2304,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-07-25",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "How a Production Outage Was Caused Using Kubernetes Pod Priorities | Grafana Labs",
    "rootCause": "",
@@ -2148,7 +2324,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: April 2022",
    "rootCause": "",
@@ -2166,7 +2344,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "All Circuits are Busy Now: The 1990 AT&T Long Distance Network Collapse",
    "rootCause": "",
@@ -2184,7 +2364,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Human Error Caused OWASA Fluoride Overdose, OWASA Very Sorry About That",
    "rootCause": "",
@@ -2202,7 +2384,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "The August 17 outage, and the work ahead",
    "rootCause": "",
@@ -2220,7 +2404,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Clouds, caches and connection conundrums | Blog | incident.io",
    "rootCause": "",
@@ -2238,7 +2425,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Technical post-mortem of the August incident",
    "rootCause": "",
@@ -2256,7 +2446,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "CPU limits and aggressive throttling in Kubernetes",
    "rootCause": "",
@@ -2274,7 +2466,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Accidental repeated emails: sorry! - Google Code Jam",
    "rootCause": "",
@@ -2292,7 +2486,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-14",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -2310,8 +2507,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "この月はサービス停止を伴うインシデントは報告されていない",
    "summary": "GitHub Availability Report: July 2021",
    "rootCause": "",
    "extraUrl": "",
@@ -2328,7 +2527,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident Review: Working as Designed, But Still Failing",
    "rootCause": "",
@@ -2346,7 +2547,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-08-29",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Authentication Latency on DUO1 Deployment",
    "rootCause": "",
@@ -2364,7 +2567,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: April 2026",
    "rootCause": "",
@@ -2382,7 +2587,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Post Mortem: What Yesterday's Network Outage Looked Like",
    "rootCause": "",
@@ -2400,7 +2607,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: September 2022",
    "rootCause": "",
@@ -2418,7 +2627,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2010-06-10",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Postmortem of last week's fileserver failure",
    "rootCause": "",
@@ -2436,7 +2647,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: May 2023",
    "rootCause": "",
@@ -2454,7 +2667,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: October 2023",
    "rootCause": "",
@@ -2472,7 +2687,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Details Behind Today's Internet Hacks",
    "rootCause": "",
@@ -2490,7 +2707,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2023",
    "rootCause": "",
@@ -2508,7 +2727,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: August 2024",
    "rootCause": "",
@@ -2526,7 +2747,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "\"This site may harm your computer\" on every search result?!?!",
    "rootCause": "",
@@ -2544,7 +2767,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Post Incident Report: April 4, 2025 - CircleCI UI Loading & build triggering issues",
    "rootCause": "",
@@ -2562,7 +2787,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2012-04-26T16:39:16",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Kubernetes made my latency 10x higher",
    "rootCause": "",
@@ -2580,7 +2807,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "The Internet is a cooperative system: CNAME to Dyn DNS outage of 6 July 2015",
    "rootCause": "",
@@ -2598,7 +2827,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Today’s outage for several Google services",
    "rootCause": "",
@@ -2616,7 +2847,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "[xubuntu-users] Public postmortum of the brief Xubuntu.org torrent download compromise last month",
    "rootCause": "",
@@ -2634,8 +2867,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "Adammargherio | Peerless Info About Fire Rated Draft Stopping Vs Standard Insulation Blog",
    "rootCause": "",
    "extraUrl": "",
@@ -2652,7 +2887,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-08-06",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Postmortem for Malicious Packages Published on July 12th, 2018 - ESLint - Pluggable JavaScript Linter",
    "rootCause": "",
@@ -2670,7 +2907,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region",
    "rootCause": "",
@@ -2688,7 +2927,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: March 2024",
    "rootCause": "",
@@ -2706,7 +2947,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Job Failure"
+   ],
    "triggerNote": "",
    "summary": "Incident Report: November 8, 2021 - Jobs stuck in a \"not running\" state",
    "rootCause": "",
@@ -2724,7 +2967,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "January 28th Incident Report",
    "rootCause": "",
@@ -2742,7 +2987,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: June 2023",
    "rootCause": "",
@@ -2760,7 +3007,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: January 2024",
    "rootCause": "",
@@ -2778,7 +3027,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "On Infrastructure at Scale: A Cascading Failure of Distributed Systems",
    "rootCause": "",
@@ -2796,7 +3048,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-06-12",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -2814,7 +3068,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Outage report 7 July 2020 - PythonAnywhere News",
    "rootCause": "",
@@ -2832,7 +3088,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2007-12-11",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "About the boot.ini issue | EVE Online",
    "rootCause": "",
@@ -2850,7 +3108,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "How I Broke `git push heroku main`",
    "rootCause": "",
@@ -2868,7 +3128,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-03-19T02:23:01",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance"
+   ],
    "triggerNote": "",
    "summary": "The shipwreck of GKE Cluster Upgrade",
    "rootCause": "",
@@ -2886,7 +3148,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-08-13",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Google Cloud Status Dashboard",
    "rootCause": "",
@@ -2904,7 +3168,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Details of Google Cloud GCVE incident | Google Cloud Blog",
    "rootCause": "",
@@ -2922,7 +3188,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2021",
    "rootCause": "",
@@ -2940,7 +3208,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance"
+   ],
    "triggerNote": "",
    "summary": "Zero-downtime Postgres migrations - the hard parts",
    "rootCause": "",
@@ -2958,7 +3228,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Heroku Status",
    "rootCause": "",
@@ -2976,7 +3249,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Roblox Return to Service | Roblox",
    "rootCause": "",
@@ -2994,7 +3270,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Redirecting...",
    "rootCause": "",
@@ -3012,7 +3290,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-02-05",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage on February 20, 2026",
    "rootCause": "",
@@ -3030,7 +3310,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-03-08",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "2023-03-08 Incident: Infrastructure connectivity issue affecting multiple regions | Datadog",
    "rootCause": "",
@@ -3048,7 +3330,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "kubernetes-on-aws/docs/postmortems/jun-2019-kubelet-qps.md at dev · zalando-incubator/kubernetes-on-aws",
    "rootCause": "",
@@ -3066,7 +3351,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: December 2023",
    "rootCause": "",
@@ -3084,7 +3372,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Postmortem — why Allegro went down",
    "rootCause": "",
@@ -3102,7 +3393,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-04-11",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Google Cloud Status Dashboard",
    "rootCause": "",
@@ -3120,7 +3413,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Container-based Linux Precise infrastructure emergency maintenance",
    "rootCause": "",
@@ -3138,7 +3433,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Instapaper Outage Cause & Recovery",
    "rootCause": "",
@@ -3156,7 +3453,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "CircleCI Jan 4, 2023 security incident report - CircleCI",
    "rootCause": "",
@@ -3174,7 +3473,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "RESOLVED: Current account payments may fail - Major Outage (27/10/2017)",
    "rootCause": "",
@@ -3192,7 +3493,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-06-12",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare service outage June 12, 2025",
    "rootCause": "",
@@ -3210,7 +3513,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: February 2023",
    "rootCause": "",
@@ -3228,7 +3533,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "August 30th 2020: Analysis of CenturyLink/Level(3) outage",
    "rootCause": "",
@@ -3246,7 +3553,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-03-15",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: March 2021",
    "rootCause": "",
@@ -3264,7 +3573,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Our recent mobile network outage has been resolved: here’s what happened",
    "rootCause": "",
@@ -3282,7 +3594,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Slack’s Incident on 2-22-22",
    "rootCause": "",
@@ -3300,7 +3615,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Maximize learnings from a Kubernetes cluster failure | TBNL",
    "rootCause": "",
@@ -3318,7 +3635,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Summary of the AWS Service Event in the Northern Virginia (US-EAST-1) Region",
    "rootCause": "",
@@ -3336,7 +3656,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Code Orange: Fail Small is complete. The result is a stronger Cloudflare network",
    "rootCause": "",
@@ -3354,7 +3676,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "DNS Outage Post Mortem",
    "rootCause": "",
@@ -3372,7 +3696,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Downtime last Saturday",
    "rootCause": "",
@@ -3390,7 +3717,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-04-17",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Knightmare: A DevOps Cautionary Tale",
    "rootCause": "",
@@ -3408,7 +3737,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-06-29T14:30:18",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Project:Infrastructure/Incident reports/2018-06-28 Github - Gentoo wiki",
    "rootCause": "",
@@ -3426,7 +3757,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: December 2022",
    "rootCause": "",
@@ -3444,7 +3777,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-17",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Hardening Workers KV",
    "rootCause": "",
@@ -3462,7 +3797,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Heroku Status",
    "rootCause": "",
@@ -3480,7 +3818,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Summary of the AWS Lambda Service Event in Northern Virginia (US-EAST-1) Region",
    "rootCause": "",
@@ -3498,7 +3838,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Status",
    "rootCause": "",
@@ -3516,7 +3858,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: June 2026",
    "rootCause": "",
@@ -3534,7 +3878,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-04-05",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Google Cloud Status Dashboard",
    "rootCause": "",
@@ -3552,7 +3898,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: January 2021",
    "rootCause": "",
@@ -3570,7 +3918,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Basecamp network attack postmortem",
    "rootCause": "",
@@ -3588,7 +3938,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "PagerDuty Status Page",
    "rootCause": "",
@@ -3606,7 +3958,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2020-09-25",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "2020-09-25 Incident: Infrastructure connectivity issue impacting multiple systems | Datadog",
    "rootCause": "",
@@ -3624,7 +3978,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Security Incident Disclosure",
    "rootCause": "",
@@ -3642,7 +3998,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Mars Climate Orbiter - Wikipedia",
    "rootCause": "",
@@ -3660,7 +4018,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Website Intermittent Timeouts",
    "rootCause": "",
@@ -3678,7 +4038,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon EC2 Issues in the Asia Pacific (Tokyo) Region (AP-NORTHEAST-1)",
    "rootCause": "",
@@ -3696,7 +4058,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "How a couple of characters brought down our site",
    "rootCause": "",
@@ -3714,7 +4078,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: February 2022",
    "rootCause": "",
@@ -3732,7 +4098,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Redirecting…",
    "rootCause": "",
@@ -3750,7 +4118,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-04-26",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Ariane flight V88 - Wikipedia",
    "rootCause": "",
@@ -3768,7 +4138,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: March 2025",
    "rootCause": "",
@@ -3786,7 +4158,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability this week",
    "rootCause": "",
@@ -3804,7 +4178,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Major outage on travis-ci.com",
    "rootCause": "",
@@ -3822,7 +4198,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: June 2022",
    "rootCause": "",
@@ -3840,7 +4218,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "How Cloudflare mitigated yet another Okta compromise",
    "rootCause": "",
@@ -3858,7 +4238,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Updates on the status of Stripe services",
    "rootCause": "",
@@ -3876,7 +4258,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: January 2025",
    "rootCause": "",
@@ -3894,7 +4278,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "When GKE ran out of IP addresses",
    "rootCause": "",
@@ -3912,7 +4298,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon EC2, Amazon EBS, and Amazon RDS Service Event in the EU West Region",
    "rootCause": "",
@@ -3930,7 +4318,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Redesigning Workers KV for increased availability and faster performance",
    "rootCause": "",
@@ -3948,7 +4338,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon DynamoDB Service Disruption and Related Impacts in the US-East Region",
    "rootCause": "",
@@ -3966,7 +4358,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Code Orange: Fail Small — our resilience plan following recent incidents",
    "rootCause": "",
@@ -3984,7 +4378,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-01-30",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Google Cloud Status Dashboard",
    "rootCause": "",
@@ -4002,7 +4398,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon S3 Service Disruption in the Northern Virginia (US-EAST-1) Region",
    "rootCause": "",
@@ -4020,7 +4418,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Catalyst Blog | Digital.ai",
    "rootCause": "",
@@ -4038,7 +4438,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Kubernetes: Make your services faster by removing CPU limits",
    "rootCause": "",
@@ -4056,7 +4458,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: February 2026",
    "rootCause": "",
@@ -4074,7 +4478,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "March 20 ChatGPT outage: Here’s what happened",
    "rootCause": "",
@@ -4092,7 +4498,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon Kinesis Event in the Northern Virginia (US-EAST-1) Region",
    "rootCause": "",
@@ -4110,8 +4518,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "本文を取得できず、引き金を特定できない",
    "summary": "skyliner.io",
    "rootCause": "",
    "extraUrl": "",
@@ -4128,7 +4538,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: March 2022",
    "rootCause": "",
@@ -4146,7 +4558,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage on June 21, 2022",
    "rootCause": "",
@@ -4164,7 +4578,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Billing Incident Post-Mortem: Breakdown, Analysis and Root Cause",
    "rootCause": "",
@@ -4182,8 +4599,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "Agentic Misalignment in Summer 2026",
    "rootCause": "",
    "extraUrl": "",
@@ -4200,7 +4619,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-11-28",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "A Post-Mortem on the Recent Developer Story Information Leak",
    "rootCause": "",
@@ -4218,8 +4639,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "この月はサービス停止を伴うインシデントは報告されていない",
    "summary": "GitHub Availability Report: December 2021",
    "rootCause": "",
    "extraUrl": "",
@@ -4236,7 +4659,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Making sure you're not a bot!",
    "rootCause": "",
@@ -4254,7 +4679,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: June 2025",
    "rootCause": "",
@@ -4272,7 +4699,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-12-02",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "What came first- the CNAME or the A record",
    "rootCause": "",
@@ -4290,7 +4719,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "BrowserStack Security Incident Report — November 2014 (Resolved)",
    "rootCause": "",
@@ -4308,7 +4739,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Okta’s Investigation of the January 2022 Compromise",
    "rootCause": "",
@@ -4326,7 +4759,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Summary of AWS Direct Connect Event in the Tokyo (AP-NORTHEAST-1) Region",
    "rootCause": "",
@@ -4344,7 +4779,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident Summary: 2017–03–16",
    "rootCause": "",
@@ -4362,8 +4800,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "本文を取得できず、引き金を特定できない",
    "summary": "PagerDuty Status Page",
    "rootCause": "",
    "extraUrl": "",
@@ -4380,8 +4820,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
    "summary": "GitHub Availability Report: January 2022",
    "rootCause": "",
    "extraUrl": "",
@@ -4398,7 +4840,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "kubernetes-on-aws/docs/postmortems/jan-2019-dns-outage.md at dev · zalando-incubator/kubernetes-on-aws",
    "rootCause": "",
@@ -4416,7 +4861,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Summary of June 8 outage | Fastly",
    "rootCause": "",
@@ -4434,7 +4881,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "SaleMove US System Issue",
    "rootCause": "",
@@ -4452,7 +4901,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Today's Outage Post Mortem",
    "rootCause": "",
@@ -4470,7 +4922,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "The Day the Replication Died",
    "rootCause": "",
@@ -4488,7 +4942,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Job Failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: February 2021",
    "rootCause": "",
@@ -4506,7 +4962,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon EC2 and Amazon RDS Service Disruption in the US East Region",
    "rootCause": "",
@@ -4524,7 +4982,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon Kinesis Data Streams Service Event in Northern Virginia (US-EAST-1) Region",
    "rootCause": "",
@@ -4542,7 +5002,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Moved ~/.local/share/steam. Ran steam. It deleted everything on system owned by user. · Issue #3671 · ValveSoftware/steam-for-linux",
    "rootCause": "",
@@ -4560,7 +5022,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Heroku Status",
    "rootCause": "",
@@ -4578,7 +5043,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Supermarket Intermittent Unresponsiveness Postmortem - Chef Blog | Chef",
    "rootCause": "",
@@ -4596,7 +5063,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Post Mortem: The Ugly, the Bad & the Good",
    "rootCause": "",
@@ -4614,7 +5084,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-10-25",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Partial Cloudflare outage on October 25, 2022",
    "rootCause": "",
@@ -4632,7 +5104,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage on July 17, 2020",
    "rootCause": "",
@@ -4650,7 +5124,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: March 2026",
    "rootCause": "",
@@ -4668,8 +5145,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "この月はサービス停止を伴うインシデントは報告されていない",
    "summary": "GitHub Availability Report: June 2021",
    "rootCause": "",
    "extraUrl": "",
@@ -4686,7 +5165,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: December 2025",
    "rootCause": "",
@@ -4704,7 +5185,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: January 2026",
    "rootCause": "",
@@ -4722,7 +5206,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-01-22",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Route leak incident on January 22, 2026",
    "rootCause": "",
@@ -4740,7 +5226,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-03-12",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Google Cloud Status Dashboard",
    "rootCause": "",
@@ -4758,7 +5246,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Salesforce's database outage: Why it happened and how to prevent another one",
    "rootCause": "",
@@ -4776,7 +5266,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-08",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Connection errors in Asia Pacific region on July 9, 2023",
    "rootCause": "",
@@ -4794,7 +5286,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "An update on recent service disruptions",
    "rootCause": "",
@@ -4812,7 +5307,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Rule attribute selector causing flag targeting web interface to crash",
    "rootCause": "",
@@ -4830,7 +5327,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: February 2025",
    "rootCause": "",
@@ -4848,7 +5347,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-06-20",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare incident on June 20, 2024",
    "rootCause": "",
@@ -4866,7 +5367,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2020-11-02",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "A Byzantine failure in the real world",
    "rootCause": "",
@@ -4884,7 +5387,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Post Mortem: Kubernetes Node OOM",
    "rootCause": "",
@@ -4902,7 +5407,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Heroku Status",
    "rootCause": "",
@@ -4920,7 +5427,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2003-08-14",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault",
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Northeast blackout of 2003 - Wikipedia",
    "rootCause": "",
@@ -4938,7 +5448,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "テスラ障害：サーバートラブルが自動車とパワーウォールのサービスに影響 | Data Center Café",
    "rootCause": "",
@@ -4956,7 +5468,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-08-07",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Behind the Scenes of a long EVE Online downtime | EVE Online",
    "rootCause": "",
@@ -4974,7 +5488,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: December 2024",
    "rootCause": "",
@@ -4992,7 +5509,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Service disruption on October 20, 2025 | Blog | incident.io",
    "rootCause": "",
@@ -5010,7 +5529,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Post-mortem of technical issue – August 29, 2019",
    "rootCause": "",
@@ -5028,7 +5549,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Apache Killer Terminated: Zero Day Exploit, Zero Day Fix",
    "rootCause": "",
@@ -5046,7 +5569,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "February service disruptions post-incident analysis",
    "rootCause": "",
@@ -5064,7 +5590,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-06-02",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Google Cloud Status Dashboard",
    "rootCause": "",
@@ -5082,7 +5611,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-07-31",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "High queue times on OSX builds (.com and .org)",
    "rootCause": "",
@@ -5100,8 +5632,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "failing like never before",
    "rootCause": "",
    "extraUrl": "",
@@ -5118,7 +5652,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-03-14",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Jobs not starting",
    "rootCause": "",
@@ -5136,7 +5673,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "PIPEFAIL: How a missing shell option slowed Cloudflare down",
    "rootCause": "",
@@ -5154,7 +5693,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: February 2024",
    "rootCause": "",
@@ -5172,7 +5713,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-07-08",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitLab .com Downtime 2014-07-08 Postmortem",
    "rootCause": "",
@@ -5190,7 +5733,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault",
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: March 2023",
    "rootCause": "",
@@ -5208,7 +5754,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Post-Incident Review on the Atlassian April 2022 outage - Inside Atlassian",
    "rootCause": "",
@@ -5226,7 +5775,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "The CircleCI Blog - CircleCI",
    "rootCause": "",
@@ -5244,7 +5795,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "High Filtering On SMS Towards AT&T Network In United States",
    "rootCause": "",
@@ -5262,7 +5815,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Kubernetes' dirty endpoint secret and Ingress · Phil Pearl's Blog",
    "rootCause": "",
@@ -5280,7 +5835,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-01-28",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "npm Blog Archive: 2014-01-28 Outage Postmortem",
    "rootCause": "",
@@ -5298,7 +5855,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Kubernetes Networking Problems Due to the Conntrack",
    "rootCause": "",
@@ -5316,7 +5876,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "An Outage Post-Mortem for August 22nd – what went wrong?",
    "rootCause": "",
@@ -5334,7 +5897,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: December 2020",
    "rootCause": "",
@@ -5352,7 +5918,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident Resolution: Do You Remember, the Twenty Fires of September?",
    "rootCause": "",
@@ -5370,7 +5938,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-09-07",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Postmortem: Removing all users from github.com/trivago · trivago tech blog",
    "rootCause": "",
@@ -5388,7 +5958,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Post Incident Report: April 4, 2025 - Delays in starting workflows",
    "rootCause": "",
@@ -5406,7 +5979,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: June 2024",
    "rootCause": "",
@@ -5424,8 +6000,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "本文を取得できず、引き金を特定できない",
    "summary": "Cloudflare Registrar",
    "rootCause": "",
    "extraUrl": "",
@@ -5442,7 +6020,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Summary of the Amazon SimpleDB Service Disruption",
    "rootCause": "",
@@ -5460,8 +6040,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "failing like never before",
    "rootCause": "",
    "extraUrl": "",
@@ -5478,7 +6060,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: January 2023",
    "rootCause": "",
@@ -5496,7 +6080,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident Review: Shepherd Cache Delays",
    "rootCause": "",
@@ -5514,7 +6100,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Search and Reporting Outage",
    "rootCause": "",
@@ -5532,7 +6121,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Summary of the October 22, 2012 AWS Service Event in the US-East Region",
    "rootCause": "",
@@ -5550,7 +6141,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-09-06",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "メンテナンス・障害情報・機能追加｜さくらインターネット公式サポートサイト",
    "rootCause": "",
@@ -5568,7 +6161,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Incident review: API and Dashboard outage on 10 October 2017",
    "rootCause": "",
@@ -5586,7 +6181,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-19",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -5604,7 +6201,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Breaking Kubernetes: How We Broke and Fixed our K8s Cluster",
    "rootCause": "",
@@ -5622,7 +6222,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Post-mortem of October 22, 2012 AWS degradation",
    "rootCause": "",
@@ -5640,7 +6242,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: July 2026",
    "rootCause": "",
@@ -5658,7 +6262,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-08-09",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "The impact of the Salesloft Drift breach on Cloudflare and our customers",
    "rootCause": "",
@@ -5676,7 +6282,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare incident on March 21, 2025",
    "rootCause": "",
@@ -5694,7 +6303,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2024",
    "rootCause": "",
@@ -5712,7 +6324,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "I deleted the production database by accident 💥",
    "rootCause": "",
@@ -5730,7 +6344,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: August 2023",
    "rootCause": "",
@@ -5748,7 +6364,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "The Four Critical Security Flaws that Resulted in Last Friday's Hack",
    "rootCause": "",
@@ -5766,7 +6384,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: May 2024",
    "rootCause": "",
@@ -5784,7 +6405,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: April 2021",
    "rootCause": "",
@@ -5802,7 +6425,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: October 2024",
    "rootCause": "",
@@ -5820,7 +6446,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: September 2025",
    "rootCause": "",
@@ -5838,7 +6466,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance"
+   ],
    "triggerNote": "",
    "summary": "Enom",
    "rootCause": "",
@@ -5856,7 +6486,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Network problems last Friday",
    "rootCause": "",
@@ -5874,7 +6507,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident Management at Spotify | Spotify Engineering",
    "rootCause": "",
@@ -5892,7 +6528,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "아시아-태평양 서울 리전(AP-NorthEast-2)의 Amazon EC2 DNS 확인(Resolution) 이슈 요약",
    "rootCause": "",
@@ -5910,7 +6548,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "A kubernetes failure story (#1 - dex)",
    "rootCause": "",
@@ -5928,7 +6568,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: July 2022",
    "rootCause": "",
@@ -5946,8 +6589,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "How to run PostgreSQL on Kubernetes",
    "rootCause": "",
    "extraUrl": "",
@@ -5964,7 +6609,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage on November 18, 2025",
    "rootCause": "",
@@ -5982,7 +6629,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: April 2025",
    "rootCause": "",
@@ -6000,7 +6649,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: October 2020",
    "rootCause": "",
@@ -6018,7 +6670,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Summary of the AWS Service Event in the US East Region",
    "rootCause": "",
@@ -6036,8 +6690,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "この月はサービス停止を伴うインシデントは報告されていない",
    "summary": "GitHub Availability Report: September 2021",
    "rootCause": "",
    "extraUrl": "",
@@ -6054,7 +6710,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Job Failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2020",
    "rootCause": "",
@@ -6072,7 +6730,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Intermittent delays in Kubernetes",
    "rootCause": "",
@@ -6090,7 +6750,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare outage caused by bad software deploy (updated)",
    "rootCause": "",
@@ -6108,7 +6770,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Postmortem on the read-only outage of Basecamp on November 9th, 2018",
    "rootCause": "",
@@ -6126,7 +6790,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Sun Screen",
    "rootCause": "",
@@ -6144,7 +6810,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Intermittent failures - incident.io Status",
    "rootCause": "",
@@ -6162,7 +6831,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-01-24",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Cloudflare incident on January 24, 2023",
    "rootCause": "",
@@ -6180,7 +6851,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-20",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "crates.io Postmortem: Broken Crate Downloads | Inside Rust Blog",
    "rootCause": "",
@@ -6198,7 +6871,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "",
    "rootCause": "",
@@ -6216,7 +6891,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-02-04",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "Elastic Cloud Incident Report: February 4, 2019",
    "rootCause": "",
@@ -6234,7 +6912,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Making sure you're not a bot!",
    "rootCause": "",
@@ -6252,8 +6932,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "Observability: cloud monitoring and logging",
    "rootCause": "",
    "extraUrl": "",
@@ -6270,7 +6952,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Today we mitigated 1.1.1.1",
    "rootCause": "",
@@ -6288,7 +6972,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Summary of the AWS Service Event in the Sydney Region",
    "rootCause": "",
@@ -6306,7 +6992,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "October 21 post-incident analysis",
    "rootCause": "",
@@ -6324,7 +7013,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Quantifying the Impact of \"Cloudbleed\"",
    "rootCause": "",
@@ -6342,7 +7033,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: July 2023",
    "rootCause": "",
@@ -6360,7 +7053,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: April 2024",
    "rootCause": "",
@@ -6378,7 +7073,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: May 2021",
    "rootCause": "",
@@ -6396,7 +7093,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-01-25",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "DNS Outage on 2023-01-25 | Inside Rust Blog",
    "rootCause": "",
@@ -6414,7 +7114,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-01-01",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "How and why the leap second affected Cloudflare DNS",
    "rootCause": "",
@@ -6432,7 +7134,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: October 2021",
    "rootCause": "",
@@ -6450,7 +7154,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: September 2020",
    "rootCause": "",
@@ -6468,7 +7174,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-01-24",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Incorrect proxying of 24 hostnames on January 24, 2022",
    "rootCause": "",
@@ -6486,7 +7195,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Steam Outage: How to Monitor Data Center Connectivity",
    "rootCause": "",
@@ -6504,7 +7215,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2021",
    "rootCause": "",
@@ -6522,7 +7236,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "GitHub availability report: August 2026",
    "rootCause": "",
@@ -6540,7 +7256,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Outage post-mortem - Moonlight updates",
    "rootCause": "",
@@ -6558,8 +7276,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "Posts tagged \"Post Mortem\"",
    "rootCause": "",
    "extraUrl": "",
@@ -6576,8 +7296,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
-   "triggerNote": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "単一の障害報告ではない",
    "summary": "Dropbox Tech Blog",
    "rootCause": "",
    "extraUrl": "",
@@ -6594,7 +7316,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-12-04",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Infrastructure failure"
+   ],
    "triggerNote": "",
    "summary": "December 4 - NRE Labs Outage Post-Mortem",
    "rootCause": "",
@@ -6612,7 +7336,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Apollo 11 and Other Screw-Ups",
    "rootCause": "",
@@ -6630,7 +7356,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "How A Cryptocurrency Miner Made Its Way onto Our Internal Kubernetes Clusters",
    "rootCause": "",
@@ -6648,7 +7376,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "スーパーコンピュータシステムのファイル消失のお詫び | 京都大学情報環境機構",
    "rootCause": "",
@@ -6666,7 +7396,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-05-20",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Cloud Service Health",
    "rootCause": "",
@@ -6684,7 +7416,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance"
+   ],
    "triggerNote": "",
    "summary": "One, Two, Skip a Few... | Blog | incident.io",
    "rootCause": "",
@@ -6702,7 +7436,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Addressing GitHub’s recent availability issues",
    "rootCause": "",
@@ -6720,7 +7456,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-06-24T00:00:00",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "The deep-dive into how Verizon and a BGP Optimizer Knocked Large Parts of the Internet Offline Monday",
    "rootCause": "",
@@ -6738,7 +7476,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Postmortem: Trading and hanging orders on 12th April 2018",
    "rootCause": "",
@@ -6756,7 +7496,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Hardware fault"
+   ],
    "triggerNote": "",
    "summary": "Major data center power failure (again): Cloudflare Code Orange tested",
    "rootCause": "",
@@ -6774,7 +7516,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Our October 20 Service Disruption: What Happened, What We Learned and How We’re Improving | LaunchDarkly",
    "rootCause": "",
@@ -6792,7 +7536,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Update on Azure Storage Service Interruption | Microsoft Azure Blog",
    "rootCause": "",
@@ -6810,7 +7556,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs",
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "An update on recent service disruptions",
    "rootCause": "",
@@ -6828,7 +7577,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Job Failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: November 2025",
    "rootCause": "",
@@ -6846,7 +7597,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: August 2022",
    "rootCause": "",
@@ -6864,7 +7617,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: May 2025",
    "rootCause": "",
@@ -6882,7 +7637,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-20",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "The mechanics of a sophisticated phishing scam and how we stopped it",
    "rootCause": "",
@@ -6900,7 +7657,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: September 2024",
    "rootCause": "",
@@ -6918,7 +7677,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "Bungie.net",
    "rootCause": "",
@@ -6936,7 +7697,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: October 2025",
    "rootCause": "",
@@ -6954,7 +7717,10 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Maintainance",
+    "Misconfiguration"
+   ],
    "triggerNote": "",
    "summary": "オーストラリアで起きた全国的な通信障害についてまとめてみた - piyolog",
    "rootCause": "",
@@ -6972,7 +7738,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-10-25",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Request increase"
+   ],
    "triggerNote": "",
    "summary": "Incident details | Google Workspace Status Dashboard",
    "rootCause": "",
@@ -6990,7 +7758,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "External failure"
+   ],
    "triggerNote": "",
    "summary": "Post Mortem: Today's Attack; Apparent Google Apps/Gmail Vulnerability; and How to Protect Yourself",
    "rootCause": "",
@@ -7008,7 +7778,9 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-12-04",
    "tz": "UTC",
    "duration": "",
-   "triggers": [],
+   "triggers": [
+    "Application bugs"
+   ],
    "triggerNote": "",
    "summary": "Incident 2023-12-04: Data leak and loss in some free tier databases",
    "rootCause": "",
