@@ -1,0 +1,75 @@
+name: Rebuild docs on SQLite update
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'incidents.sqlite'
+      - '*.sqlite'
+      - '*.sqlite3'
+      - '*.db'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  rebuild-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 pypdf
+
+      - name: Rebuild docs data
+        run: |
+          python3 export_site_data.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet docs/data/; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'docs: rebuild site data from updated SQLite database'
+          title: 'docs: rebuild site data from updated SQLite database'
+          body: |
+            ## 変更内容
+            
+            SQLiteデータベースの更新に伴い、公開サイト用のデータ (`docs/data/incidents.js`) を再ビルドしました。
+            
+            ### 実行されたコマンド
+            ```bash
+            python3 export_site_data.py
+            ```
+            
+            ### 変更されたファイル
+            - `docs/data/incidents.js`
+            
+            ---
+            
+            This PR was automatically created by the `rebuild-docs` GitHub Actions workflow.
+          branch: auto/rebuild-docs-data
+          branch-suffix: timestamp
+          delete-branch: true
+          labels: |
+            automated
+            documentation
