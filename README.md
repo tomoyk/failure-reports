@@ -60,6 +60,25 @@ GitHub Pages で公開する場合は、リポジトリの Settings → Pages �
 
 サイトの機能: キーワード検索、サービス・発生年・引き金での絞り込み(グラフのクリックでも可)、並べ替え、詳細表示、ライト/ダークテーマ。絞り込み条件はURLに保存されるため、そのまま共有できます。
 
+### 自動ビルド（GitHub Actions）
+
+SQLiteデータベースが更新されたときに、自動的に`docs/data/incidents.js`を再ビルドしてPRを作成するGitHub Actionsワークフローが設定されています。
+
+#### 自動実行
+`main`ブランチにSQLiteファイルをプッシュすると、自動的にdocsが再ビルドされます：
+
+```bash
+git add incidents.sqlite
+git commit -m "update: incidents database"
+git push origin main
+```
+
+#### 手動実行
+GitHubの「Actions」タブから「Rebuild docs on SQLite update」ワークフローを選択し、「Run workflow」ボタンで手動実行できます。
+
+#### セットアップ
+初回利用時は、リポジトリの設定でGitHub Actionsにワークフロー権限を付与する必要があります。詳細は[.github/workflows/README.md](.github/workflows/README.md)を参照してください。
+
 ### データベースの確認
 
 ```bash
