@@ -309,6 +309,31 @@
     }));
   }
 
+  // 年が増えると4桁ラベルはパネル幅を超える。間隔を空けて軸ラベルを置く。
+  function yearLabelSet(yearList) {
+    var stride = yearList.length <= 12 ? 1 : yearList.length <= 20 ? 2 : 5;
+    var chosen = {};
+    function nearest(year) {
+      var best = Infinity;
+      Object.keys(chosen).forEach(function (key) {
+        var dist = Math.abs(Number(key) - year);
+        if (dist < best) best = dist;
+      });
+      return best;
+    }
+    if (stride === 1) {
+      yearList.forEach(function (year) { chosen[year] = true; });
+      return chosen;
+    }
+    yearList.forEach(function (year) {
+      if (year % stride === 0) chosen[year] = true;
+    });
+    [yearList[0], yearList[yearList.length - 1]].forEach(function (year) {
+      if (nearest(year) >= 4) chosen[year] = true;
+    });
+    return chosen;
+  }
+
   function renderCharts() {
     var maxTrigger = Math.max.apply(null, triggerOrder.map(function (key) { return triggerCounts[key]; }));
     els.triggerBars.replaceChildren.apply(els.triggerBars, triggerOrder.map(function (key) {
@@ -331,7 +356,9 @@
 
     var yearList = [];
     for (var year = minYear; year <= maxYear; year++) yearList.push(year);
+    var labels = yearLabelSet(yearList);
     var maxYearCount = Math.max.apply(null, yearList.map(function (y) { return yearCounts[y] || 0; }));
+    els.yearColumns.classList.toggle("is-compact", yearList.length > 12);
     els.yearColumns.replaceChildren.apply(els.yearColumns, yearList.map(function (y) {
       var count = yearCounts[y] || 0;
       return h("li", { class: "column" }, [
@@ -341,14 +368,15 @@
           disabled: count === 0,
           "aria-pressed": String(state.year === String(y)),
           "aria-label": y + "年 " + count + "件",
+          title: y + "年 " + count + "件",
           onclick: function () { setYear(state.year === String(y) ? "" : String(y)); }
         }, [
           h("span", { class: "column-count", text: count ? String(count) : "" }),
           h("span", { class: "column-fill", style: { "--ratio": String(count / maxYearCount) } }),
-          h("span", { class: "column-year" }, [
+          labels[y] ? h("span", { class: "column-year" }, [
             h("span", { class: "y-full", text: String(y) }),
             h("span", { class: "y-short", text: "’" + String(y).slice(2) })
-          ])
+          ]) : null
         ])
       ]);
     }));
