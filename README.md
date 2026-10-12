@@ -8,7 +8,8 @@ Web系システムの障害レポートを収集・分析するためのプロ�
 
 ## ファイル構成
 
-- `scrape_incidents.py` - 障害レポートをスクレイピングするPythonスクリプト
+- `incident_scraper.py` - スプレッドシート全行を取得するスクレイピング実装
+- `scrape_incidents.py` - 互換用エントリーポイント
 - `incidents.sqlite` - 障害データを保存したSQLiteデータベース
 - `DATABASE_USAGE.md` - データベースの使用方法ガイド
 
@@ -30,7 +31,7 @@ https://docs.google.com/spreadsheets/d/1kt1Rz-DtPSf0faz_EICI50sYWglEy1-LGBRq57X5
 # 必要なパッケージをインストール
 pip install requests beautifulsoup4
 
-# スクレイピングを実行
+# スプレッドシートを再取得し、DBを置き換える
 python3 scrape_incidents.py
 ```
 
@@ -46,8 +47,9 @@ sqlite3 incidents.sqlite "SELECT id, provider, articles FROM incidents LIMIT 5;"
 
 ## 収集データ
 
-- **総レコード数**: 25件
-- **スクレイピング成功**: 23件
+- `gid=0` の見出し後にある非空データ行: 59件
+- `Source (original)` にHTTP(S) URLがある行: 55件
+- Sourceが欠損している行も、空セルを保持したままDBへ保存
 - **主要プロバイダー**: AWS, Cloudflare, GitHub, Discord, Honeycomb, Asana等
 
 各障害レポートには以下の情報が含まれます：
