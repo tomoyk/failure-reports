@@ -508,4 +508,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    # Compatibility entry point. The implementation now reads every spreadsheet
+    # row dynamically instead of using the legacy hard-coded sample above.
+    from incident_scraper import main as spreadsheet_main
+
+    spreadsheet_main()

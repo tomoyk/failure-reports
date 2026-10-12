@@ -7,10 +7,11 @@
 ## データソース
 
 - **元データ**: [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1kt1Rz-DtPSf0faz_EICI50sYWglEy1-LGBRq57X58J0/edit?gid=0#gid=0)
-- **総レコード数**: 25件
-- **スクレイピング成功**: 23件
-- **スクレイピングエラー**: 1件
-- **スキップ**: 1件（空URL）
+- **総データ行数**: 59件
+- **`Source (original)` URL保有行数**: 55件
+- **Source欠損行数**: 4件
+
+スクレイピングの成功・失敗件数は接続先の状態により変動します。
 
 ## データベーススキーマ
 
@@ -19,6 +20,8 @@
 | カラム名 | 型 | 説明 |
 |---------|-----|------|
 | `id` | INTEGER | 主キー（自動採番） |
+| `sheet_gid` | TEXT | 取得元シートのgid |
+| `sheet_row` | INTEGER | 取得元シートの行番号 |
 | `tz` | TEXT | タイムゾーン |
 | `datetime_begin` | TEXT | 障害開始日時 |
 | `datetime_end` | TEXT | 障害終了日時 |
@@ -30,12 +33,13 @@
 | `root_cause_analysis` | TEXT | 根本原因分析 |
 | `trigger` | TEXT | トリガー（障害種類） |
 | `scraped_url` | TEXT | スクレイピングしたURL |
+| `scraped_final_url` | TEXT | リダイレクト後の最終URL |
 | `scraped_title` | TEXT | スクレイピングしたページタイトル |
 | `scraped_content` | TEXT | スクレイピングした本文 |
 | `scraped_at` | TEXT | スクレイピング実行日時 |
 | `scrape_status` | TEXT | スクレイピング状態（success/error/skipped） |
 | `scrape_error` | TEXT | エラーメッセージ（エラー時のみ） |
-| `created_at` | TEXT | レコード作成日時 |
+| `http_status` | INTEGER | HTTPステータスコード |
 
 ## SQLクエリ例
 
@@ -162,28 +166,15 @@ conn.close()
 python3 scrape_incidents.py
 ```
 
-**注意**: データベースは上書きされず、レコードが追加されます。新規にスクレイピングする場合は、まずデータベースを削除してください。
-
-```bash
-rm incidents.sqlite
-python3 scrape_incidents.py
-```
+スプレッドシートを再取得して一時DBを作成し、成功時に
+`incidents.sqlite` を置き換えます。途中で失敗した場合、既存DBは保持されます。
 
 ## トラブルシューティング
 
 ### エラーレコードの確認
-
-1件のエラーが発生しています（datacenterdynamics.com が403 Forbiddenを返しました）。
 
 ```sql
 SELECT provider, source_original, scrape_error 
 FROM incidents 
 WHERE scrape_status = 'error';
 ```
-
-結果:
-- Provider: Salesforce's
-- URL: https://www.datacenterdynamics.com/en/opinions/salesforce-database-outage-why-it-happened-and-how-prevent-another-one/
-- Error: 403 Client Error: Forbidden
-
-このサイトはスクレイピングをブロックしている可能性があります。
