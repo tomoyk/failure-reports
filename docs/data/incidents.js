@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-12T09:20:36+00:00",
+ "generatedAt": "2026-10-13T10:34:40+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -7786,6 +7786,206 @@ window.FAILURE_REPORTS = {
    "rootCause": "無料枠は1時間使わないと縮退するが、fly.ioがホストの資源不足でプロセスを戻せないことがある。その処理のバグで、一部のデータベースが空のバックアップ識別子を使い、データの漏えいと消失が起きた。",
    "extraUrl": "",
    "archived": false
+  },
+  {
+   "id": 386,
+   "title": "Incident with Actions, Pull Requests and Issues",
+   "url": "https://www.githubstatus.com/incidents/93njd414rpbx",
+   "provider": "GitHub",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 12:21:00",
+   "datetimeEnd": "2026-10-12 20:16:00",
+   "tz": "UTC",
+   "duration": "7時間55分",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Incident with Actions, Pull Requests and Issues",
+   "rootCause": "Actionsの新規実行のキューイング、Checks API、Issueの作成・更新、PRのレビュー依頼が失敗または遅延し、Web/メール通知も滞留した。原因は未公表で、詳細な根本原因分析を後日共有すると発表された。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 387,
+   "title": "Increased build and deployment failures",
+   "url": "https://www.vercel-status.com/incidents/sps6n39gm4sg",
+   "provider": "Vercel",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 13:35:00",
+   "datetimeEnd": "2026-10-12 20:11:00",
+   "tz": "UTC",
+   "duration": "6時間36分",
+   "triggers": [
+    "External failure"
+   ],
+   "triggerNote": "",
+   "summary": "Increased build and deployment failures",
+   "rootCause": "上流のGitHub障害により、GitHub連携プロジェクトのビルドとデプロイが失敗した。デプロイイベント（PR上のデプロイ状態更新など）の反映も遅延した。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 388,
+   "title": "ES-2281237",
+   "url": "https://status.databricks.com/pages/incident/5cf02dde58a00904bda41926/6accd920d492610581e1c8c1",
+   "provider": "Databricks",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 12:30:00",
+   "datetimeEnd": "2026-10-12 16:30:00",
+   "tz": "UTC",
+   "duration": "4時間",
+   "triggers": [
+    "Infrastructure failure"
+   ],
+   "triggerNote": "",
+   "summary": "ES-2281237",
+   "rootCause": "AWS US West 2のServerless Computeがコンテナイメージを取得できず起動に失敗し、ジョブ、Lakeflow、SQL warehouse、AI/BIダッシュボードとGenieに影響した。クラシックコンピュートは影響を受けなかった。",
+   "extraUrl": "https://status.databricks.com/pages/incident/5cf02dde58a00904bda41926/6accd920d492610581e1c8c1",
+   "archived": false
+  },
+  {
+   "id": 389,
+   "title": "Microsoft 365 outage on 2026-10-12 | UptimeRobot",
+   "url": "https://uptimerobot.com/is-it-down/microsoft-365/2026-10-12/",
+   "provider": "Microsoft 365",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 07:00:00",
+   "datetimeEnd": "2026-10-12 10:42:00",
+   "tz": "UTC",
+   "duration": "3時間42分",
+   "triggers": [
+    "Infrastructure failure"
+   ],
+   "triggerNote": "",
+   "summary": "Microsoft 365: Azure Rights Management encrypt/decrypt failures",
+   "rootCause": "Azure Rights Managementの処理コンポーネントが異常状態となり、保護ファイル・メールの暗号化と復号が失敗した。Purview、Power BI、SharePoint Online、Microsoft 365 Copilot Chatの一部に影響した。コンポーネントを再起動し、影響を受けた基盤からトラフィックを迂回して回復した。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 390,
+   "title": "Microsoft 365 outage on 2026-10-12 | UptimeRobot",
+   "url": "https://uptimerobot.com/is-it-down/microsoft-365/2026-10-12/",
+   "provider": "Microsoft 365",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 08:15:00",
+   "datetimeEnd": "2026-10-12 13:04:00",
+   "tz": "UTC",
+   "duration": "4時間49分",
+   "triggers": [
+    "Misconfiguration"
+   ],
+   "triggerNote": "",
+   "summary": "Microsoft 365: Exchange admin center inaccessible",
+   "rootCause": "Exchange管理センターがInternal Server Errorで開けなくなった。原因は直近のEAC設定変更で、予期しないHTTP 302リダイレクトが発生した。設定変更をロールバックして回復した。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 391,
+   "title": "Cloudflare Network Performance Issues",
+   "url": "https://www.cloudflarestatus.com/incidents/ja8aolszxtrg",
+   "provider": "Cloudflare",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 16:22:00",
+   "datetimeEnd": "2026-10-12 23:49:00",
+   "tz": "UTC",
+   "duration": "7時間27分",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Cloudflare Network Performance Issues",
+   "rootCause": "一部データセンターで間欠的な性能問題が発生し、Cloudflare経由のサイトでエラーや遅延が出た。原因は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 392,
+   "title": "Cloudflare Workers - Cron Trigger Activation Issues",
+   "url": "https://www.cloudflarestatus.com/incidents/mbv1dfp471bh",
+   "provider": "Cloudflare",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 19:09:00",
+   "datetimeEnd": "2026-10-12 22:20:00",
+   "tz": "UTC",
+   "duration": "3時間11分",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Cloudflare Workers - Cron Trigger Activation Issues",
+   "rootCause": "最近作成または変更したWorkers Cron Triggerのスケジュールが期待どおり実行されない状態になった。未変更の既存スケジュールは影響を受けなかった。修正を適用して回復した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 393,
+   "title": "Elevated errors in Los Angeles (LAX)",
+   "url": "https://www.cloudflarestatus.com/incidents/vyy1a1dspusg",
+   "provider": "Cloudflare",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 08:52:00",
+   "datetimeEnd": "",
+   "tz": "UTC",
+   "duration": "",
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Elevated errors in Los Angeles (LAX)",
+   "rootCause": "Los Angeles (LAX) コロへの到達でエラーが増加した。原因は公表されておらず、報告時点では対応が継続している。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 394,
+   "title": "【復旧】全国でインターネット接続がご利用できない /ご利用しづらい状況...",
+   "url": "https://information.myjcom.jp/outage/55529.html",
+   "provider": "J:COM",
+   "date": "2026-10-12",
+   "year": 2026,
+   "datetimeBegin": "2026-10-12 11:15:00",
+   "datetimeEnd": "2026-10-12 17:19:00",
+   "tz": "JST",
+   "duration": "6時間4分",
+   "triggers": [
+    "Hardware fault"
+   ],
+   "triggerNote": "",
+   "summary": "【復旧】全国でインターネット接続がご利用できない /ご利用しづらい状況について",
+   "rootCause": "J:COM NET 光の設備不良により、マンションタイプの一部加入者で全国的にインターネット接続が利用できない、またはしづらい状態になった。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 395,
+   "title": "Yandex confirms service outage as users lose access to cloud files",
+   "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+   "provider": "Yandex",
+   "date": "2026-10-08",
+   "year": 2026,
+   "datetimeBegin": "2026-10-08",
+   "datetimeEnd": "",
+   "tz": "UTC",
+   "duration": "",
+   "triggers": [
+    "External failure"
+   ],
+   "triggerNote": "",
+   "summary": "Yandex confirms service outage as users lose access to cloud files",
+   "rootCause": "ドローン攻撃でSasovo（10月8日）、Kaluga（10月9日）、Vladimir（10月11日）の3データセンターが被害を受け、SasovoとVladimirは全停止、Kalugaは部分停止となった。利用者がクラウド上のファイルにアクセスできない障害が報告され、Compute・AI Studio・セキュリティは部分稼働、復旧時期は示されていない。",
+   "extraUrl": "",
+   "archived": true
   }
  ]
 };
