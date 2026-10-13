@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-13T10:34:40+00:00",
+ "generatedAt": "2026-10-13T14:24:09+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -23,6 +23,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2010-12-07T00:00:00Z",
    "tz": "UTC",
    "duration": "24 hours",
+   "durationMinutes": 1440,
    "triggers": [
     "Application bugs"
    ],
@@ -43,6 +44,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-09-08 8:48",
    "tz": "PDT",
    "duration": "約83分",
+   "durationMinutes": 83,
    "triggers": [
     "Application bugs"
    ],
@@ -63,6 +65,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-25T14:48:00Z",
    "tz": "UTC",
    "duration": "68 min",
+   "durationMinutes": 68,
    "triggers": [
     "Application bugs"
    ],
@@ -83,6 +86,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-06-20 ≈その後（Packet loss 解消後）",
    "tz": "UTC",
    "duration": "約数十分以内（詳細なDuration不明）",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -103,6 +107,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017/10/10 16:59:00",
    "tz": "BST",
    "duration": "約1時間50分",
+   "durationMinutes": 110,
    "triggers": [
     "Hardware fault"
    ],
@@ -123,6 +128,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-08-23 15:21（冷却回復）、18:30（ほとんど復旧）／16:05（APIリストア）",
    "tz": "JST",
    "duration": "約2時間45分（インスタンス停止・EBS劣化）／約5時間54分（API完全復旧含む）",
+   "durationMinutes": 354,
    "triggers": [
     "Hardware fault"
    ],
@@ -143,6 +149,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023/11/04 4:25:00",
    "tz": "UTC",
    "duration": "40:42:00",
+   "durationMinutes": 2442,
    "triggers": [
     "Hardware fault"
    ],
@@ -163,6 +170,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2011-08-08T06:00:00Z",
    "tz": "UTC",
    "duration": "9h",
+   "durationMinutes": 540,
    "triggers": [
     "Hardware fault"
    ],
@@ -183,6 +191,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-05-10T18:00:00Z",
    "tz": "UTC",
    "duration": "13 hours",
+   "durationMinutes": 780,
    "triggers": [
     "Hardware fault"
    ],
@@ -203,6 +212,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2012-10-22 16:15（EBS復旧）／21:50（ELB関連全復旧）",
    "tz": "PDT",
    "duration": "約6時間（EBS復旧）／約12時間（全復旧）",
+   "durationMinutes": 720,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -223,6 +233,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-07-26T01:10:00Z",
    "tz": "UTC",
    "duration": "20 min",
+   "durationMinutes": 20,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -243,6 +254,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017/03/20 16:54:00",
    "tz": "UTC",
    "duration": "5:16:00",
+   "durationMinutes": 316,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -263,6 +275,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017/10/13 14:57:00",
    "tz": "UTC",
    "duration": "0:39:00",
+   "durationMinutes": 39,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -283,6 +296,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019/02/05 22:09:00",
    "tz": "UTC",
    "duration": "40:34:00",
+   "durationMinutes": 2434,
    "triggers": [
     "Job Failure"
    ],
@@ -303,6 +317,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024/11/15 15:22:00",
    "tz": "UTC",
    "duration": "9:27:00",
+   "durationMinutes": 567,
    "triggers": [
     "Job Failure"
    ],
@@ -323,6 +338,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-07-20（autovacuum終了・復旧）",
    "tz": "UTC（推定）",
    "duration": "数時間〜US営業時間中（詳細Duration不明）",
+   "durationMinutes": null,
    "triggers": [
     "Job Failure"
    ],
@@ -343,6 +359,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-09-30 ～数十分以内（該当接続の切断自動で発生）",
    "tz": "EST (推定)",
    "duration": "約数十分",
+   "durationMinutes": null,
    "triggers": [
     "Job Failure"
    ],
@@ -363,6 +380,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-10-22 ≈翌日同時刻まで（約24時間11分）",
    "tz": "UTC",
    "duration": "約24時間11分",
+   "durationMinutes": 1451,
    "triggers": [
     "Hardware fault"
    ],
@@ -383,6 +401,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-10-23T23:03:00Z",
    "tz": "UTC",
    "duration": "24h 11min",
+   "durationMinutes": 1451,
    "triggers": [
     "Maintainance"
    ],
@@ -403,6 +422,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024/12/11 11:38:00",
    "tz": "UTC",
    "duration": "4:22:00",
+   "durationMinutes": 262,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -424,6 +444,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-07-02 14:09（CPU回復）／14:52（WAF復旧）",
    "tz": "UTC",
    "duration": "約27分（大規模影響）／約70分（WAF機能完全復旧）",
+   "durationMinutes": 70,
    "triggers": [
     "Misconfiguration"
    ],
@@ -444,6 +465,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "1日",
+   "durationMinutes": 1440,
    "triggers": [
     "Misconfiguration"
    ],
@@ -464,6 +486,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-06-08T00:30:00Z",
    "tz": "UTC",
    "duration": "30 min",
+   "durationMinutes": 30,
    "triggers": [
     "Misconfiguration"
    ],
@@ -484,6 +507,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-02-06 09:13（主要障害復旧）／09:36（Durable Objects エラー収束）",
    "tz": "UTC",
    "duration": "約59分（R2完全障害）／約82分（エラー収束含む）",
+   "durationMinutes": 82,
    "triggers": [
     "Misconfiguration"
    ],
@@ -504,6 +528,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-07-10 17:02／2019-07-10 21:14–22:47",
    "tz": "UTC",
    "duration": "約26分（第1回）／約1時間33分（第2回）",
+   "durationMinutes": 93,
    "triggers": [
     "Other"
    ],
@@ -524,6 +549,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015/03/27 0:00:00",
    "tz": "UTC",
    "duration": "-",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -544,6 +570,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016/08/22 23:10:00",
    "tz": "UTC",
    "duration": "5:49:00",
+   "durationMinutes": 349,
    "triggers": [
     "Request increase"
    ],
@@ -564,6 +591,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018/02/04 20:20:00",
    "tz": "UTC",
    "duration": "1:50:00",
+   "durationMinutes": 110,
    "triggers": [
     "Request increase"
    ],
@@ -584,6 +612,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018/02/05 0:15:00",
    "tz": "UTC",
    "duration": "2:15:00",
+   "durationMinutes": 135,
    "triggers": [
     "Request increase"
    ],
@@ -604,6 +633,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018/02/05 0:15:00",
    "tz": "UTC",
    "duration": "-",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -624,6 +654,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018/02/05 0:15:00",
    "tz": "UTC",
    "duration": "-",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -644,6 +675,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018/02/05 0:15:00",
    "tz": "UTC",
    "duration": "-",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -664,6 +696,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018/02/05 0:15:00",
    "tz": "UTC",
    "duration": "-",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -684,6 +717,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "同日中（具体時刻不明）",
    "tz": "UTC（推定）",
    "duration": "数十分（推定）",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -704,6 +738,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-08-21 19:38（大幅改善）／20:18（断続的レイテンシ続く）",
    "tz": "UTC",
    "duration": "約3時間11分（大幅影響）／約3時間51分（断続影響含む）",
+   "durationMinutes": 231,
    "triggers": [
     "Request increase"
    ],
@@ -724,6 +759,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-05-？（問題解明完了まで）",
    "tz": "UTC（推定）",
    "duration": "数週間以上の調査期間（正確なDuration不明）",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -744,6 +780,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-07-24 11:40:04",
    "tz": "UTC",
    "duration": "1時間24分",
+   "durationMinutes": 84,
    "triggers": [
     "External failure"
    ],
@@ -764,6 +801,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-02-28 21:52:00",
    "tz": "UTC",
    "duration": "4時間15分",
+   "durationMinutes": 255,
    "triggers": [
     "External failure"
    ],
@@ -784,6 +822,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -804,6 +843,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -824,6 +864,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -844,6 +885,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -865,6 +907,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -886,6 +929,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -907,6 +951,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -927,6 +972,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -948,6 +994,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "23分",
+   "durationMinutes": 23,
    "triggers": [
     "Misconfiguration"
    ],
@@ -968,6 +1015,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "PST",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -988,6 +1036,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -1008,6 +1057,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "PDT",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -1028,6 +1078,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1048,6 +1099,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "2時間30分",
+   "durationMinutes": 150,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -1069,6 +1121,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1089,6 +1142,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "PDT",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -1110,6 +1164,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1130,6 +1185,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -1151,6 +1207,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1171,6 +1228,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -1191,6 +1249,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure",
     "Request increase"
@@ -1212,6 +1271,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-11-16",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -1232,6 +1292,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1252,6 +1313,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-10-30",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1272,6 +1334,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-11-12",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -1292,6 +1355,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-02-15",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1312,6 +1376,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -1332,6 +1397,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -1353,6 +1419,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -1373,6 +1440,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-09-05 16:43:00",
    "tz": "UTC",
    "duration": "19分",
+   "durationMinutes": 19,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -1394,6 +1462,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -1414,6 +1483,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1434,6 +1504,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-10-26 04:34:00",
    "tz": "UTC",
    "duration": "3時間47分",
+   "durationMinutes": 227,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1454,6 +1525,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-05-20 10:33:00",
    "tz": "UTC",
    "duration": "49分",
+   "durationMinutes": 49,
    "triggers": [
     "Application bugs"
    ],
@@ -1474,6 +1546,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -1494,6 +1567,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Job Failure"
    ],
@@ -1514,6 +1588,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-08-05 16:14:00",
    "tz": "UTC",
    "duration": "32分",
+   "durationMinutes": 32,
    "triggers": [
     "Maintainance",
     "Application bugs"
@@ -1535,6 +1610,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1555,6 +1631,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-11-25 18:30:00",
    "tz": "UTC",
    "duration": "1時間56分",
+   "durationMinutes": 116,
    "triggers": [
     "External failure"
    ],
@@ -1575,6 +1652,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -1595,6 +1673,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1615,6 +1694,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -1636,6 +1716,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1656,6 +1737,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-02-19",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1676,6 +1758,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -1697,6 +1780,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-09-13",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -1718,6 +1802,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-08-06",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1738,6 +1823,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1758,6 +1844,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Application bugs"
@@ -1779,6 +1866,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -1799,6 +1887,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -1819,6 +1908,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "JST",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1839,6 +1929,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -1859,6 +1950,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-07-05 02:30:00",
    "tz": "UTC",
    "duration": "1時間37分",
+   "durationMinutes": 97,
    "triggers": [
     "External failure"
    ],
@@ -1879,6 +1971,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-08-10 18:22:00",
    "tz": "UTC",
    "duration": "3時間6分",
+   "durationMinutes": 186,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -1900,6 +1993,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -1920,6 +2014,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1940,6 +2035,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -1960,6 +2056,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-03-27 13:58:00",
    "tz": "UTC",
    "duration": "1時間33分",
+   "durationMinutes": 93,
    "triggers": [
     "Request increase"
    ],
@@ -1980,6 +2077,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -2000,6 +2098,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "55分",
+   "durationMinutes": 55,
    "triggers": [
     "Application bugs"
    ],
@@ -2020,6 +2119,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -2040,6 +2140,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -2060,6 +2161,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-10-13",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -2081,6 +2183,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -2101,6 +2204,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -2121,6 +2225,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -2141,6 +2246,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -2161,6 +2267,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -2182,6 +2289,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -2203,6 +2311,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-07-29 03:15:00",
    "tz": "UTC",
    "duration": "5時間34分",
+   "durationMinutes": 334,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -2224,6 +2333,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -2244,6 +2354,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Job Failure"
    ],
@@ -2264,6 +2375,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -2284,6 +2396,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -2304,6 +2417,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-07-25",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2324,6 +2438,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-04-01 12:39:00",
    "tz": "UTC",
    "duration": "5時間32分",
+   "durationMinutes": 332,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2344,6 +2459,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "1990-01-16 04:25:00",
    "tz": "UTC",
    "duration": "9時間",
+   "durationMinutes": 540,
    "triggers": [
     "Application bugs"
    ],
@@ -2364,6 +2480,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2384,6 +2501,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "7時間47分",
+   "durationMinutes": 467,
    "triggers": [
     "Request increase"
    ],
@@ -2404,6 +2522,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Request increase"
@@ -2425,6 +2544,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "4時間",
+   "durationMinutes": 240,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -2446,6 +2566,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -2466,6 +2587,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -2486,6 +2608,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-14",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -2507,6 +2630,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -2527,6 +2651,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "4時間",
+   "durationMinutes": 240,
    "triggers": [
     "Request increase"
    ],
@@ -2547,6 +2672,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-08-29",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -2567,6 +2693,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-04-01 23:45:00",
    "tz": "UTC",
    "duration": "8時間43分",
+   "durationMinutes": 523,
    "triggers": [
     "Application bugs"
    ],
@@ -2587,6 +2714,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2607,6 +2735,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-09-09 00:55:00",
    "tz": "UTC",
    "duration": "5時間11分",
+   "durationMinutes": 311,
    "triggers": [
     "External failure"
    ],
@@ -2627,6 +2756,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2010-06-10",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -2647,6 +2777,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-04-27 00:02:00",
    "tz": "UTC",
    "duration": "51分",
+   "durationMinutes": 51,
    "triggers": [
     "Application bugs"
    ],
@@ -2667,6 +2798,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-10-17 13:48:00",
    "tz": "UTC",
    "duration": "2時間49分",
+   "durationMinutes": 169,
    "triggers": [
     "Maintainance"
    ],
@@ -2687,6 +2819,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -2707,6 +2840,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-11-03 19:20:00",
    "tz": "UTC",
    "duration": "38分",
+   "durationMinutes": 38,
    "triggers": [
     "Application bugs"
    ],
@@ -2727,6 +2861,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-08-14 23:38:00",
    "tz": "UTC",
    "duration": "36分",
+   "durationMinutes": 36,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2747,6 +2882,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2767,6 +2903,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2787,6 +2924,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2012-04-26T16:39:16",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2807,6 +2945,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -2827,6 +2966,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -2847,6 +2987,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -2867,6 +3008,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -2887,6 +3029,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-08-06",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -2907,6 +3050,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -2927,6 +3071,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-03-15 20:24:00",
    "tz": "UTC",
    "duration": "42分",
+   "durationMinutes": 42,
    "triggers": [
     "Misconfiguration"
    ],
@@ -2947,6 +3092,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Job Failure"
    ],
@@ -2967,6 +3113,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -2987,6 +3134,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-06-07 18:11:00",
    "tz": "UTC",
    "duration": "2時間",
+   "durationMinutes": 120,
    "triggers": [
     "Request increase"
    ],
@@ -3007,6 +3155,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-01-09 14:40:00",
    "tz": "UTC",
    "duration": "2時間20分",
+   "durationMinutes": 140,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3027,6 +3176,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -3048,6 +3198,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-06-12",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3068,6 +3219,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -3088,6 +3240,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2007-12-11",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3108,6 +3261,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -3128,6 +3282,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-03-19T02:23:01",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance"
    ],
@@ -3148,6 +3303,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-08-13",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -3168,6 +3324,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -3188,6 +3345,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-11-27 23:30:00",
    "tz": "UTC",
    "duration": "2時間50分",
+   "durationMinutes": 170,
    "triggers": [
     "Maintainance"
    ],
@@ -3208,6 +3366,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance"
    ],
@@ -3228,6 +3387,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -3249,6 +3409,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "3日1時間",
+   "durationMinutes": 4380,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -3270,6 +3431,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -3290,6 +3452,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-02-05",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3310,6 +3473,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-03-08",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -3330,6 +3494,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Request increase"
@@ -3351,6 +3516,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-12-27 04:00:00",
    "tz": "UTC",
    "duration": "1時間30分",
+   "durationMinutes": 90,
    "triggers": [
     "Maintainance",
     "Application bugs"
@@ -3372,6 +3538,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Request increase"
@@ -3393,6 +3560,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-04-11",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3413,6 +3581,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3433,6 +3602,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3453,6 +3623,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -3473,6 +3644,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3493,6 +3665,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-06-12",
    "tz": "UTC",
    "duration": "2時間28分",
+   "durationMinutes": 148,
    "triggers": [
     "External failure"
    ],
@@ -3513,6 +3686,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-01-30 22:06:00",
    "tz": "UTC",
    "duration": "35分",
+   "durationMinutes": 35,
    "triggers": [
     "External failure"
    ],
@@ -3533,6 +3707,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -3553,6 +3728,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-03-15",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3573,6 +3749,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -3594,6 +3771,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -3615,6 +3793,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -3635,6 +3814,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -3656,6 +3836,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3676,6 +3857,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3696,6 +3878,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -3717,6 +3900,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-04-17",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3737,6 +3921,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-06-29T14:30:18",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -3757,6 +3942,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-11-25 18:30:00",
    "tz": "UTC",
    "duration": "1時間56分",
+   "durationMinutes": 116,
    "triggers": [
     "External failure"
    ],
@@ -3777,6 +3963,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-17",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -3797,6 +3984,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -3818,6 +4006,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3838,6 +4027,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -3858,6 +4048,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "1時間25分",
+   "durationMinutes": 85,
    "triggers": [
     "External failure"
    ],
@@ -3878,6 +4069,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-04-05",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3898,6 +4090,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-01-28 07:21:00",
    "tz": "UTC",
    "duration": "3時間",
+   "durationMinutes": 180,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3918,6 +4111,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -3938,6 +4132,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -3958,6 +4153,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2020-09-25",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -3978,6 +4174,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -3998,6 +4195,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4018,6 +4216,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4038,6 +4237,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4058,6 +4258,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4078,6 +4279,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-02-02 19:18:00",
    "tz": "UTC",
    "duration": "13分",
+   "durationMinutes": 13,
    "triggers": [
     "Application bugs"
    ],
@@ -4098,6 +4300,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -4118,6 +4321,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-04-26",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4138,6 +4342,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-03-31 17:00:00",
    "tz": "UTC",
    "duration": "2日10時間",
+   "durationMinutes": 3480,
    "triggers": [
     "Application bugs"
    ],
@@ -4158,6 +4363,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4178,6 +4384,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4198,6 +4405,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-06-01 10:28:00",
    "tz": "UTC",
    "duration": "48分",
+   "durationMinutes": 48,
    "triggers": [
     "Request increase"
    ],
@@ -4218,6 +4426,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -4238,6 +4447,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4258,6 +4468,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-01-09 01:57:00",
    "tz": "UTC",
    "duration": "31分",
+   "durationMinutes": 31,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4278,6 +4489,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -4298,6 +4510,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -4318,6 +4531,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -4338,6 +4552,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -4358,6 +4573,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4378,6 +4594,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-01-30",
    "tz": "UTC",
    "duration": "2時間",
+   "durationMinutes": 120,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -4398,6 +4615,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4418,6 +4636,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -4438,6 +4657,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4458,6 +4678,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-02-02 18:46:00",
    "tz": "UTC",
    "duration": "1時間5分",
+   "durationMinutes": 65,
    "triggers": [
     "Application bugs"
    ],
@@ -4478,6 +4699,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4498,6 +4720,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -4518,6 +4741,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -4538,6 +4762,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -4558,6 +4783,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4578,6 +4804,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure",
     "Request increase"
@@ -4599,6 +4826,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -4619,6 +4847,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2016-11-28",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4639,6 +4868,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -4659,6 +4889,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4679,6 +4910,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-06-05 19:20:00",
    "tz": "UTC",
    "duration": "1時間33分",
+   "durationMinutes": 93,
    "triggers": [
     "External failure"
    ],
@@ -4699,6 +4931,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-12-02",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4719,6 +4952,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -4739,6 +4973,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -4759,6 +4994,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -4779,6 +5015,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -4800,6 +5037,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -4820,6 +5058,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-02-02 19:38:00",
    "tz": "UTC",
    "duration": "26分",
+   "durationMinutes": 26,
    "triggers": [
     "Other"
    ],
@@ -4840,6 +5079,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Request increase"
@@ -4861,6 +5101,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4881,6 +5122,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -4901,6 +5143,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -4922,6 +5165,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -4942,6 +5186,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Job Failure"
    ],
@@ -4962,6 +5207,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -4982,6 +5228,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -5002,6 +5249,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5022,6 +5270,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5043,6 +5292,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -5063,6 +5313,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5084,6 +5335,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-10-25",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5104,6 +5356,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "27分",
+   "durationMinutes": 27,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5124,6 +5377,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-03-03 20:09:00",
    "tz": "UTC",
    "duration": "1時間10分",
+   "durationMinutes": 70,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5145,6 +5399,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -5165,6 +5420,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-12-08 21:06:00",
    "tz": "UTC",
    "duration": "1時間15分",
+   "durationMinutes": 75,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5185,6 +5441,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-01-13 10:24:00",
    "tz": "UTC",
    "duration": "46分",
+   "durationMinutes": 46,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -5206,6 +5463,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-01-22",
    "tz": "UTC",
    "duration": "25分",
+   "durationMinutes": 25,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5226,6 +5484,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-03-12",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5246,6 +5505,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5266,6 +5526,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-08",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -5286,6 +5547,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-03-16 19:45:00",
    "tz": "UTC",
    "duration": "5時間36分",
+   "durationMinutes": 336,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -5307,6 +5569,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5327,6 +5590,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-02-25 16:44:00",
    "tz": "UTC",
    "duration": "2時間19分",
+   "durationMinutes": 139,
    "triggers": [
     "Request increase"
    ],
@@ -5347,6 +5611,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-06-20",
    "tz": "UTC",
    "duration": "1時間54分",
+   "durationMinutes": 114,
    "triggers": [
     "Application bugs"
    ],
@@ -5367,6 +5632,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2020-11-02",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -5387,6 +5653,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5407,6 +5674,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -5427,6 +5695,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2003-08-14",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault",
     "Application bugs"
@@ -5448,6 +5717,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -5468,6 +5738,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-08-07",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5488,6 +5759,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-12-17 14:34:00",
    "tz": "UTC",
    "duration": "17分",
+   "durationMinutes": 17,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -5509,6 +5781,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -5529,6 +5802,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -5549,6 +5823,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -5569,6 +5844,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -5590,6 +5866,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-06-02",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -5611,6 +5888,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2015-07-31",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5632,6 +5910,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -5652,6 +5931,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-03-14",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5673,6 +5953,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5693,6 +5974,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-02-26 19:27:00",
    "tz": "UTC",
    "duration": "53分",
+   "durationMinutes": 53,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5713,6 +5995,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-07-08",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5733,6 +6016,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-02-28 17:08:00",
    "tz": "UTC",
    "duration": "1時間26分",
+   "durationMinutes": 86,
    "triggers": [
     "Hardware fault",
     "External failure"
@@ -5754,6 +6038,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5775,6 +6060,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -5795,6 +6081,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -5815,6 +6102,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -5835,6 +6123,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2014-01-28",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5855,6 +6144,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -5876,6 +6166,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -5897,6 +6188,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -5918,6 +6210,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -5938,6 +6231,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-09-07",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -5958,6 +6252,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -5979,6 +6274,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-06-05 19:27:00",
    "tz": "UTC",
    "duration": "2時間22分",
+   "durationMinutes": 142,
    "triggers": [
     "Maintainance",
     "Application bugs"
@@ -6000,6 +6296,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -6020,6 +6317,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -6040,6 +6338,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -6060,6 +6359,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-01-30 22:23:00",
    "tz": "UTC",
    "duration": "35分",
+   "durationMinutes": 35,
    "triggers": [
     "Application bugs"
    ],
@@ -6080,6 +6380,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -6100,6 +6401,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Request increase"
@@ -6121,6 +6423,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6141,6 +6444,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-09-06",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -6161,6 +6465,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "1時間50分",
+   "durationMinutes": 110,
    "triggers": [
     "Hardware fault"
    ],
@@ -6181,6 +6486,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-19",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -6201,6 +6507,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration",
     "Request increase"
@@ -6222,6 +6529,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -6242,6 +6550,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -6262,6 +6571,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-08-09",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -6282,6 +6592,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -6303,6 +6614,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-11-19 12:03:00",
    "tz": "UTC",
    "duration": "1時間7分",
+   "durationMinutes": 67,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -6324,6 +6636,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -6344,6 +6657,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-08-15 20:58:00",
    "tz": "UTC",
    "duration": "4時間",
+   "durationMinutes": 240,
    "triggers": [
     "Request increase"
    ],
@@ -6364,6 +6678,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -6384,6 +6699,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-05-21 18:40:00",
    "tz": "UTC",
    "duration": "7時間",
+   "durationMinutes": 420,
    "triggers": [
     "Maintainance",
     "Request increase"
@@ -6405,6 +6721,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-04-01 22:23:00",
    "tz": "UTC",
    "duration": "53分",
+   "durationMinutes": 53,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -6425,6 +6742,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-10-12 01:11:00",
    "tz": "UTC",
    "duration": "19時間12分",
+   "durationMinutes": 1152,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -6446,6 +6764,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-09-15 18:20:00",
    "tz": "UTC",
    "duration": "25分",
+   "durationMinutes": 25,
    "triggers": [
     "Application bugs"
    ],
@@ -6466,6 +6785,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance"
    ],
@@ -6486,6 +6806,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -6507,6 +6828,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -6528,6 +6850,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -6548,6 +6871,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -6568,6 +6892,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-28 04:24:00",
    "tz": "UTC",
    "duration": "5時間55分",
+   "durationMinutes": 355,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -6589,6 +6914,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -6609,6 +6935,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6629,6 +6956,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-04-11 03:44:00",
    "tz": "UTC",
    "duration": "39分",
+   "durationMinutes": 39,
    "triggers": [
     "Misconfiguration"
    ],
@@ -6649,6 +6977,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -6670,6 +6999,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -6690,6 +7020,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -6710,6 +7041,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2020-11-02 12:32:00",
    "tz": "UTC",
    "duration": "32分",
+   "durationMinutes": 32,
    "triggers": [
     "Job Failure"
    ],
@@ -6730,6 +7062,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -6750,6 +7083,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6770,6 +7104,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6790,6 +7125,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -6810,6 +7146,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Application bugs"
@@ -6831,6 +7168,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-01-24",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6851,6 +7189,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-20",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6871,6 +7210,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -6891,6 +7231,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-02-04",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -6912,6 +7253,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6932,6 +7274,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -6952,6 +7295,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -6972,6 +7316,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -6992,6 +7337,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Hardware fault"
@@ -7013,6 +7359,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7033,6 +7380,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-07-21 14:06:00",
    "tz": "UTC",
    "duration": "59分",
+   "durationMinutes": 59,
    "triggers": [
     "Hardware fault"
    ],
@@ -7053,6 +7401,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-04-05 08:58:00",
    "tz": "UTC",
    "duration": "47分",
+   "durationMinutes": 47,
    "triggers": [
     "Request increase"
    ],
@@ -7073,6 +7422,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-05-08 15:46:00",
    "tz": "UTC",
    "duration": "9時間",
+   "durationMinutes": 540,
    "triggers": [
     "Application bugs"
    ],
@@ -7093,6 +7443,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-01-25",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -7114,6 +7465,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2017-01-01",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -7134,6 +7486,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-10-08 18:52:00",
    "tz": "UTC",
    "duration": "1時間36分",
+   "durationMinutes": 96,
    "triggers": [
     "Application bugs"
    ],
@@ -7154,6 +7507,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -7174,6 +7528,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-01-24",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -7195,6 +7550,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "2時間",
+   "durationMinutes": 120,
    "triggers": [
     "Misconfiguration"
    ],
@@ -7215,6 +7571,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-11-27 23:30:00",
    "tz": "UTC",
    "duration": "2時間50分",
+   "durationMinutes": 170,
    "triggers": [
     "Maintainance",
     "Infrastructure failure"
@@ -7236,6 +7593,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "10時間42分",
+   "durationMinutes": 642,
    "triggers": [
     "Request increase"
    ],
@@ -7256,6 +7614,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -7276,6 +7635,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "25分",
+   "durationMinutes": 25,
    "triggers": [
     "Other"
    ],
@@ -7296,6 +7656,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -7316,6 +7677,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2018-12-04",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -7336,6 +7698,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -7356,6 +7719,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7376,6 +7740,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -7396,6 +7761,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-05-20",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -7416,6 +7782,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance"
    ],
@@ -7436,6 +7803,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -7456,6 +7824,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2019-06-24T00:00:00",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7476,6 +7845,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7496,6 +7866,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Hardware fault"
    ],
@@ -7516,6 +7887,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7536,6 +7908,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -7556,6 +7929,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-03-16 19:45:00",
    "tz": "UTC",
    "duration": "5時間36分",
+   "durationMinutes": 336,
    "triggers": [
     "Application bugs",
     "Request increase"
@@ -7577,6 +7951,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-11-17 19:08:00",
    "tz": "UTC",
    "duration": "2時間16分",
+   "durationMinutes": 136,
    "triggers": [
     "Job Failure"
    ],
@@ -7597,6 +7972,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-08-29 18:31:00",
    "tz": "UTC",
    "duration": "5時間40分",
+   "durationMinutes": 340,
    "triggers": [
     "External failure"
    ],
@@ -7617,6 +7993,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-05-01 23:13:00",
    "tz": "UTC",
    "duration": "1時間4分",
+   "durationMinutes": 64,
    "triggers": [
     "External failure"
    ],
@@ -7637,6 +8014,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2022-07-20",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7657,6 +8035,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2024-09-16 22:08:00",
    "tz": "UTC",
    "duration": "57分",
+   "durationMinutes": 57,
    "triggers": [
     "Misconfiguration"
    ],
@@ -7677,6 +8056,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Misconfiguration"
    ],
@@ -7697,6 +8077,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2025-10-09 16:40:00",
    "tz": "UTC",
    "duration": "1時間55分",
+   "durationMinutes": 115,
    "triggers": [
     "External failure"
    ],
@@ -7717,6 +8098,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Maintainance",
     "Misconfiguration"
@@ -7738,6 +8120,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2021-10-25",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Request increase"
    ],
@@ -7758,6 +8141,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
@@ -7778,6 +8162,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2023-12-04",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Application bugs"
    ],
@@ -7798,6 +8183,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 20:16:00",
    "tz": "UTC",
    "duration": "7時間55分",
+   "durationMinutes": 475,
    "triggers": [
     "Other"
    ],
@@ -7818,6 +8204,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 20:11:00",
    "tz": "UTC",
    "duration": "6時間36分",
+   "durationMinutes": 396,
    "triggers": [
     "External failure"
    ],
@@ -7838,6 +8225,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 16:30:00",
    "tz": "UTC",
    "duration": "4時間",
+   "durationMinutes": 240,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -7858,6 +8246,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 10:42:00",
    "tz": "UTC",
    "duration": "3時間42分",
+   "durationMinutes": 222,
    "triggers": [
     "Infrastructure failure"
    ],
@@ -7878,6 +8267,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 13:04:00",
    "tz": "UTC",
    "duration": "4時間49分",
+   "durationMinutes": 289,
    "triggers": [
     "Misconfiguration"
    ],
@@ -7898,6 +8288,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 23:49:00",
    "tz": "UTC",
    "duration": "7時間27分",
+   "durationMinutes": 447,
    "triggers": [
     "Other"
    ],
@@ -7918,6 +8309,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 22:20:00",
    "tz": "UTC",
    "duration": "3時間11分",
+   "durationMinutes": 191,
    "triggers": [
     "Other"
    ],
@@ -7938,6 +8330,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "Other"
    ],
@@ -7958,6 +8351,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "2026-10-12 17:19:00",
    "tz": "JST",
    "duration": "6時間4分",
+   "durationMinutes": 364,
    "triggers": [
     "Hardware fault"
    ],
@@ -7978,6 +8372,7 @@ window.FAILURE_REPORTS = {
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
+   "durationMinutes": null,
    "triggers": [
     "External failure"
    ],
