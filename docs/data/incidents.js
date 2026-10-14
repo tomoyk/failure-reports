@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-14T00:30:37+00:00",
+ "generatedAt": "2026-10-13T23:52:17+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -8104,26 +8104,6 @@ window.FAILURE_REPORTS = {
    "triggerNote": "",
    "summary": "2026年10月13日通信サービスご利用不可発生のご報告（復旧）",
    "rootCause": "特定顧客の一時的なトラフィック急増により閾値を超過し、リレーションEthernetおよびそれをアクセス回線とするクラウド接続（AWS、Azure、GCP、Oracle Cloud、IBM Cloud、IDCFクラウド）、Ethernetインターネット、トランジットサービスが一時的に利用不可になった。",
-   "extraUrl": "",
-   "archived": false
-  },
-  {
-   "id": 402,
-   "title": "【重要】（復旧済み）日本株・ETF全銘柄の取引停止について | お知らせ | PayPay証券",
-   "url": "https://www.paypay-sec.co.jp/notice/20261013_1.html",
-   "provider": "PayPay証券",
-   "date": "2026-10-13",
-   "year": 2026,
-   "datetimeBegin": "2026-10-13 10:15:00",
-   "datetimeEnd": "2026-10-14 09:00:00",
-   "tz": "JST",
-   "duration": "22時間45分",
-   "triggers": [
-    "External failure"
-   ],
-   "triggerNote": "",
-   "summary": "【重要】（復旧済み）日本株・ETF全銘柄の取引停止について",
-   "rootCause": "外部接続先であるみずほ証券株式会社の日本株取引に関する受発注システムに障害が発生し、日本株・ETF全銘柄の取引が停止した。サイバー攻撃や不正アクセスによるものではない。",
    "extraUrl": "",
    "archived": false
   }
