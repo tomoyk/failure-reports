@@ -57,6 +57,57 @@ GENERIC_SUBDOMAINS = {"www", "blog", "status", "engineering", "news", "support",
 SECOND_LEVEL = {"co", "com", "ne", "or", "ac", "go"}
 
 DATE_PATTERN = re.compile(r"(\d{4})[-/](\d{1,2})[-/](\d{1,2})")
+CLOCK_PATTERN = re.compile(r"^\s*(?:約)?\s*(\d{1,2}):(\d{2}):(\d{2})\s*$")
+DAY_PATTERN = re.compile(r"(\d+)\s*日")
+HOUR_PATTERN = re.compile(r"(\d+(?:\.\d+)?)\s*(?:時間|hours?|hrs?|h)(?![a-zA-Z])", re.I)
+MINUTE_PATTERN = re.compile(r"(\d+(?:\.\d+)?)\s*(?:分|minutes?|mins?|min)(?![a-zA-Z])", re.I)
+VAGUE_DURATION = re.compile(r"数週間|数時間|数十分")
+
+
+def parse_duration_minutes(value: str | None) -> int | None:
+    """自由記述の継続時間から分を取り出す。複数の値があるときは最大値（全復旧=TTR）を使う。"""
+    raw = (value or "").strip()
+    if not raw or raw == "-":
+        return None
+    best: float | None = None
+    for segment in raw.split("／"):
+        minutes = _parse_duration_segment(segment)
+        if minutes is None:
+            continue
+        if best is None or minutes > best:
+            best = minutes
+    if best is None or best <= 0:
+        return None
+    return round(best)
+
+
+def _parse_duration_segment(segment: str) -> float | None:
+    segment = segment.strip()
+    if not segment:
+        return None
+    has_digit = bool(re.search(r"\d", segment))
+    if VAGUE_DURATION.search(segment) and not has_digit:
+        return None
+    if "不明" in segment and not has_digit:
+        return None
+
+    clock = CLOCK_PATTERN.match(segment)
+    if clock:
+        hours, minutes, seconds = (int(group) for group in clock.groups())
+        return hours * 60 + minutes + seconds / 60
+
+    total = 0.0
+    found = False
+    for match in DAY_PATTERN.finditer(segment):
+        total += int(match.group(1)) * 1440
+        found = True
+    for match in HOUR_PATTERN.finditer(segment):
+        total += float(match.group(1)) * 60
+        found = True
+    for match in MINUTE_PATTERN.finditer(segment):
+        total += float(match.group(1))
+        found = True
+    return total if found and total > 0 else None
 
 
 def parse_date(value: str) -> str | None:
@@ -145,6 +196,7 @@ def build_records(connection: sqlite3.Connection) -> list[dict]:
                 "datetimeEnd": clean(row["datetime_end"]),
                 "tz": clean(row["tz"]),
                 "duration": clean(row["duration"]),
+                "durationMinutes": parse_duration_minutes(row["duration"]),
                 "triggers": triggers,
                 "triggerNote": trigger_note,
                 "summary": "" if articles.startswith("http") else articles,

@@ -3,6 +3,21 @@
 
   var NONE = "none";
   var UNKNOWN_YEAR = "unknown";
+  var UNKNOWN_TTR = "unknown";
+  var TTR_OVERFLOW = "ge12";
+  var TTR_BIN_HOURS = 12;
+  var TTR_BIN_MINUTES = 60;
+  var TTR_BUCKETS = [];
+  for (var ttrBin = 0; ttrBin < TTR_BIN_HOURS; ttrBin++) {
+    TTR_BUCKETS.push({
+      key: "h" + ttrBin,
+      max: (ttrBin + 1) * TTR_BIN_MINUTES,
+      label: ttrBin + "–" + (ttrBin + 1) + "時間",
+      axis: ttrBin + "–" + (ttrBin + 1),
+      short: String(ttrBin)
+    });
+  }
+  var TTR_KEYS = TTR_BUCKETS.map(function (bucket) { return bucket.key; }).concat([TTR_OVERFLOW]);
   var data = window.FAILURE_REPORTS;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -10,6 +25,8 @@
     stats: $("stats"),
     triggerBars: $("trigger-bars"),
     yearColumns: $("year-columns"),
+    ttrColumns: $("ttr-columns"),
+    ttrNote: $("ttr-note"),
     controls: $("controls"),
     q: $("q"),
     provider: $("provider"),
@@ -86,6 +103,90 @@
     return parts[0] + "年" + Number(parts[1]) + "月" + Number(parts[2]) + "日";
   }
 
+  function formatMinutes(mins) {
+    if (mins == null || !isFinite(mins)) return "";
+    mins = Math.round(mins);
+    if (mins < 60) return mins + "分";
+    var days = Math.floor(mins / 1440);
+    var hours = Math.floor((mins % 1440) / 60);
+    var minutes = mins % 60;
+    var parts = [];
+    if (days) parts.push(days + "日");
+    if (hours) parts.push(hours + "時間");
+    if (minutes) parts.push(minutes + "分");
+    return parts.join("") || "0分";
+  }
+
+  function median(values) {
+    if (!values.length) return null;
+    var sorted = values.slice().sort(function (a, b) { return a - b; });
+    var mid = Math.floor(sorted.length / 2);
+    return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+  }
+
+  function ttrBucket(minutes) {
+    if (minutes == null) return UNKNOWN_TTR;
+    var index = Math.floor(minutes / TTR_BIN_MINUTES);
+    if (index >= TTR_BIN_HOURS) return TTR_OVERFLOW;
+    return "h" + index;
+  }
+
+  function ttrLabel(key) {
+    if (key === UNKNOWN_TTR) return "不明";
+    if (key === TTR_OVERFLOW) return TTR_BIN_HOURS + "時間以上";
+    for (var i = 0; i < TTR_BUCKETS.length; i++) {
+      if (TTR_BUCKETS[i].key === key) return TTR_BUCKETS[i].label;
+    }
+    return key;
+  }
+
+  function parseDurationMinutes(text) {
+    var raw = String(text || "").trim();
+    if (!raw || raw === "-") return null;
+    var best = null;
+    raw.split("／").forEach(function (segment) {
+      var minutes = parseDurationSegment(segment);
+      if (minutes != null && (best == null || minutes > best)) best = minutes;
+    });
+    return best == null ? null : Math.round(best);
+  }
+
+  function parseDurationSegment(segment) {
+    segment = String(segment || "").trim();
+    if (!segment) return null;
+    var hasDigit = /\d/.test(segment);
+    if (/数週間|数時間|数十分/.test(segment) && !hasDigit) return null;
+    if (segment.indexOf("不明") !== -1 && !hasDigit) return null;
+
+    var clock = segment.match(/^\s*(?:約)?\s*(\d{1,2}):(\d{2}):(\d{2})\s*$/);
+    if (clock) return Number(clock[1]) * 60 + Number(clock[2]) + Number(clock[3]) / 60;
+
+    var total = 0;
+    var found = false;
+    var match;
+    var dayRe = /(\d+)\s*日/g;
+    while ((match = dayRe.exec(segment))) {
+      total += Number(match[1]) * 1440;
+      found = true;
+    }
+    var hourRe = /(\d+(?:\.\d+)?)\s*(?:時間|hours?|hrs?|h)(?![a-zA-Z])/gi;
+    while ((match = hourRe.exec(segment))) {
+      total += Number(match[1]) * 60;
+      found = true;
+    }
+    var minRe = /(\d+(?:\.\d+)?)\s*(?:分|minutes?|mins?|min)(?![a-zA-Z])/gi;
+    while ((match = minRe.exec(segment))) {
+      total += Number(match[1]);
+      found = true;
+    }
+    return found && total > 0 ? total : null;
+  }
+
+  function durationMinutesOf(incident) {
+    if (typeof incident.durationMinutes === "number") return incident.durationMinutes;
+    return parseDurationMinutes(incident.duration);
+  }
+
   function hashHue(text) {
     var hash = 0;
     for (var i = 0; i < text.length; i++) hash = (hash * 31 + text.charCodeAt(i)) >>> 0;
@@ -111,6 +212,8 @@
   var byId = {};
   incidents.forEach(function (incident) {
     byId[incident.id] = incident;
+    incident.ttrMinutes = durationMinutesOf(incident);
+    incident.ttr = ttrBucket(incident.ttrMinutes);
     incident.haystack = normalize([
       incident.title,
       incident.provider,
@@ -121,6 +224,13 @@
       incident.triggers.join(" ")
     ].join("\n"));
   });
+  var ttrMinutesList = incidents.map(function (incident) { return incident.ttrMinutes; }).filter(function (value) {
+    return value != null;
+  });
+  var ttrMedian = median(ttrMinutesList);
+  var ttrCounts = {};
+  TTR_KEYS.concat([UNKNOWN_TTR]).forEach(function (key) { ttrCounts[key] = 0; });
+  incidents.forEach(function (incident) { ttrCounts[incident.ttr] += 1; });
 
   var triggerKeys = Object.keys(data.triggerLabels).filter(function (key) {
     return incidents.some(function (incident) { return incident.triggers.indexOf(key) !== -1; });
@@ -148,7 +258,7 @@
     return providerCounts[b] - providerCounts[a] || a.localeCompare(b);
   });
 
-  var state = { q: "", triggers: [], provider: "", year: "", sort: "date-desc", analyzed: false };
+  var state = { q: "", triggers: [], provider: "", year: "", ttr: "", sort: "date-desc", analyzed: false };
 
   function readUrl() {
     var params = new URLSearchParams(location.search);
@@ -159,7 +269,9 @@
     state.provider = providerCounts[params.get("p")] ? params.get("p") : "";
     var year = params.get("y");
     state.year = year === UNKNOWN_YEAR || yearCounts[year] ? year : "";
-    state.sort = ["date-desc", "date-asc", "provider"].indexOf(params.get("s")) !== -1 ? params.get("s") : "date-desc";
+    var ttr = params.get("d");
+    state.ttr = ttr === UNKNOWN_TTR || TTR_KEYS.indexOf(ttr) !== -1 ? ttr : "";
+    state.sort = ["date-desc", "date-asc", "ttr-desc", "ttr-asc", "provider"].indexOf(params.get("s")) !== -1 ? params.get("s") : "date-desc";
     state.analyzed = params.get("a") === "1";
     return Number(params.get("id")) || null;
   }
@@ -170,6 +282,7 @@
     if (state.triggers.length) params.set("t", state.triggers.join(","));
     if (state.provider) params.set("p", state.provider);
     if (state.year) params.set("y", state.year);
+    if (state.ttr) params.set("d", state.ttr);
     if (state.sort !== "date-desc") params.set("s", state.sort);
     if (state.analyzed) params.set("a", "1");
     if (openId) params.set("id", openId);
@@ -178,7 +291,7 @@
   }
 
   function isFiltered() {
-    return !!(state.q || state.triggers.length || state.provider || state.year || state.analyzed);
+    return !!(state.q || state.triggers.length || state.provider || state.year || state.ttr || state.analyzed);
   }
 
   function searchTerms() {
@@ -189,6 +302,7 @@
     if (state.provider && incident.provider !== state.provider) return false;
     if (state.year === UNKNOWN_YEAR && incident.year) return false;
     if (state.year && state.year !== UNKNOWN_YEAR && String(incident.year) !== state.year) return false;
+    if (state.ttr && incident.ttr !== state.ttr) return false;
     if (state.analyzed && !incident.rootCause) return false;
     if (state.triggers.length) {
       var hit = state.triggers.some(function (key) {
@@ -209,7 +323,17 @@
         return a.date === b.date ? a.id - b.id : direction * (a.date < b.date ? -1 : 1);
       };
     };
+    var ttrCompare = function (direction) {
+      return function (a, b) {
+        if (a.ttrMinutes == null && b.ttrMinutes == null) return dateCompare(-1)(a, b);
+        if (a.ttrMinutes == null) return 1;
+        if (b.ttrMinutes == null) return -1;
+        return a.ttrMinutes === b.ttrMinutes ? dateCompare(-1)(a, b) : direction * (a.ttrMinutes - b.ttrMinutes);
+      };
+    };
     if (state.sort === "date-asc") copy.sort(dateCompare(1));
+    else if (state.sort === "ttr-desc") copy.sort(ttrCompare(-1));
+    else if (state.sort === "ttr-asc") copy.sort(ttrCompare(1));
     else if (state.sort === "provider") copy.sort(function (a, b) { return a.provider.localeCompare(b.provider, "ja") || dateCompare(-1)(a, b); });
     else copy.sort(dateCompare(-1));
     return copy;
@@ -258,7 +382,10 @@
           avatar(incident.provider),
           highlight(h("span", { class: "provider-name" }), incident.provider, regex)
         ]),
-        h("time", { class: "date" + (date ? "" : " is-unknown"), datetime: incident.date || false, text: date || "日時不明" })
+        h("span", { class: "card-meta" }, [
+          h("time", { class: "date" + (date ? "" : " is-unknown"), datetime: incident.date || false, text: date || "日時不明" }),
+          incident.ttrMinutes != null ? h("span", { class: "ttr", text: formatMinutes(incident.ttrMinutes) }) : null
+        ])
       ]),
       titleNode,
       cause
@@ -299,8 +426,9 @@
       ["収録レポート", String(incidents.length), "件"],
       ["サービス", String(providerTotal), "社"],
       ["対象期間", minYear + "–" + maxYear, ""],
-      ["原因分析あり", String(analyzed), "件"]
-    ];
+      ["原因分析あり", String(analyzed), "件"],
+      ttrMedian != null ? ["TTR中央値", formatMinutes(ttrMedian), ""] : null
+    ].filter(Boolean);
     els.stats.replaceChildren.apply(els.stats, items.map(function (item) {
       return h("div", { class: "stat" }, [
         h("dt", { text: item[0] }),
@@ -380,6 +508,43 @@
         ])
       ]);
     }));
+
+    var maxTtrCount = Math.max.apply(null, TTR_BUCKETS.map(function (bucket) { return ttrCounts[bucket.key]; }));
+    els.ttrColumns.classList.toggle("is-compact", TTR_BUCKETS.length > 10);
+    els.ttrColumns.replaceChildren.apply(els.ttrColumns, TTR_BUCKETS.map(function (bucket) {
+      var count = ttrCounts[bucket.key] || 0;
+      return h("li", { class: "column" }, [
+        h("button", {
+          class: "column-button",
+          type: "button",
+          disabled: count === 0,
+          "aria-pressed": String(state.ttr === bucket.key),
+          "aria-label": ttrLabel(bucket.key) + " " + count + "件",
+          title: ttrLabel(bucket.key) + " " + count + "件",
+          onclick: function () { setTtr(state.ttr === bucket.key ? "" : bucket.key); }
+        }, [
+          h("span", { class: "column-count", text: count ? String(count) : "" }),
+          h("span", { class: "column-fill", style: { "--ratio": String(maxTtrCount ? count / maxTtrCount : 0) } }),
+          h("span", { class: "column-year" }, [
+            h("span", { class: "y-full", text: bucket.axis }),
+            h("span", { class: "y-short", text: bucket.short })
+          ])
+        ])
+      ]);
+    }));
+    var overflow = ttrCounts[TTR_OVERFLOW] || 0;
+    var note = "階級幅は1時間";
+    if (ttrMedian != null) note += " · 中央値 " + formatMinutes(ttrMedian);
+    note += " · クリックで絞り込み";
+    els.ttrNote.replaceChildren.apply(els.ttrNote, [
+      document.createTextNode(note),
+      overflow ? h("button", {
+        class: "text-button ttr-overflow",
+        type: "button",
+        "aria-pressed": String(state.ttr === TTR_OVERFLOW),
+        onclick: function () { setTtr(state.ttr === TTR_OVERFLOW ? "" : TTR_OVERFLOW); }
+      }, [TTR_BIN_HOURS + "時間以上 " + overflow + "件"]) : null
+    ].filter(Boolean));
   }
 
   function renderChips() {
@@ -438,6 +603,11 @@
     update();
   }
 
+  function setTtr(value) {
+    state.ttr = value;
+    update();
+  }
+
   var currentDetailId = null;
 
   function detailFact(label, value) {
@@ -462,7 +632,10 @@
     var facts = [
       detailFact("発生日時", begin),
       detailFact("終了日時", incident.datetimeEnd),
-      detailFact("継続時間", incident.duration && incident.duration !== "-" ? incident.duration : "")
+      detailFact("継続時間", incident.duration && incident.duration !== "-" ? incident.duration : ""),
+      incident.ttrMinutes != null && (!incident.duration || incident.duration === "-")
+        ? detailFact("障害時間", formatMinutes(incident.ttrMinutes))
+        : null
     ].filter(Boolean);
 
     els.detailBody.style.setProperty("--tone", tone(primaryKey(incident)));
@@ -495,6 +668,7 @@
     state.triggers = [];
     state.provider = "";
     state.year = "";
+    state.ttr = "";
     state.analyzed = false;
     update();
   }
