@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-13T14:24:09+00:00",
+ "generatedAt": "2026-10-14T00:25:33+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -8381,6 +8381,132 @@ window.FAILURE_REPORTS = {
    "rootCause": "ドローン攻撃でSasovo（10月8日）、Kaluga（10月9日）、Vladimir（10月11日）の3データセンターが被害を受け、SasovoとVladimirは全停止、Kalugaは部分停止となった。利用者がクラウド上のファイルにアクセスできない障害が報告され、Compute・AI Studio・セキュリティは部分稼働、復旧時期は示されていない。",
    "extraUrl": "",
    "archived": true
+  },
+  {
+   "id": 396,
+   "title": "Cloudflare Service Issues",
+   "url": "https://www.cloudflarestatus.com/incidents/z7vongh8rqc1",
+   "provider": "Cloudflare",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 16:39:00",
+   "datetimeEnd": "2026-10-13 17:07:00",
+   "tz": "UTC",
+   "duration": "28分",
+   "durationMinutes": 28,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Cloudflare Service Issues",
+   "rootCause": "IAD（アッシュバーン）でネットワーク性能問題が発生し、Cloudflareサービス全体でエラーやタイムアウトが増加した。影響度はmajor。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 397,
+   "title": "Network Performance Issues in LAX",
+   "url": "https://www.cloudflarestatus.com/incidents/fdgz8zlmfhw6",
+   "provider": "Cloudflare",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 20:37:00",
+   "datetimeEnd": "2026-10-13 22:44:00",
+   "tz": "UTC",
+   "duration": "2時間7分",
+   "durationMinutes": 127,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Network Performance Issues in LAX",
+   "rootCause": "Los Angeles（LAX）でネットワーク性能問題が発生した。影響度はminor。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 398,
+   "title": "Cloudflare Workers - Cron Trigger Activation Issues",
+   "url": "https://www.cloudflarestatus.com/incidents/cbvocc87nsne",
+   "provider": "Cloudflare",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 15:18:00",
+   "datetimeEnd": "",
+   "tz": "UTC",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Cloudflare Workers - Cron Trigger Activation Issues",
+   "rootCause": "最近作成または変更したWorkers Cron Triggerのスケジュールが期待どおり実行されない状態になった。未変更の既存スケジュールは影響を受けなかった。修正の適用後も監視中で、報告時点では未解決。終了時刻は未公表。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 399,
+   "title": "MO1505952: Users may be unable to access multiple Microsoft 365 services using Global Secure Access (GSA) | Microsoft 365 service health | 365Fanatic",
+   "url": "https://www.365fanatic.com/m365-status/MO1505952/",
+   "provider": "Microsoft 365",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 07:40:00",
+   "datetimeEnd": "2026-10-13 18:31:00",
+   "tz": "UTC",
+   "duration": "10時間51分",
+   "durationMinutes": 651,
+   "triggers": [
+    "Infrastructure failure"
+   ],
+   "triggerNote": "",
+   "summary": "Microsoft 365: Users may be unable to access multiple services using GSA (MO1505952)",
+   "rootCause": "Global Secure Access（GSA）基盤の一部が性能閾値を下回り、ドイツの一部利用者でOutlook、Outlook on the web、OneDrive、SharePoint Online、Microsoft Teams、Windows 365 Cloud PCへの接続ができなくなった。トラフィックを健全な基盤へ迂回し、影響を受けた基盤を再起動して復旧した。",
+   "extraUrl": "https://status.cloud.microsoft/m365/referrer=serviceStatus",
+   "archived": false
+  },
+  {
+   "id": 400,
+   "title": "Degraded performance in GPT-6.1 Sol Codex and Work mode - OpenAI Status",
+   "url": "https://status.openai.com/incidents/01M4T4ZCM54D3ZPTQXRSWFG0XS",
+   "provider": "OpenAI",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 08:18:00",
+   "datetimeEnd": "2026-10-13 16:36:00",
+   "tz": "UTC",
+   "duration": "8時間18分",
+   "durationMinutes": 498,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Degraded performance in GPT-6.1 Sol Codex and Work mode",
+   "rootCause": "GPT-6.1 SolでCodex（Web / API / VS Code）とChatGPT Workの性能が低下した。緩和策を適用し、監視の後に復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 401,
+   "title": "2026年10月13日通信サービスご利用不可発生のご報告（復旧） | BroadLine 障害情報 | TOKAIコミュニケーションズ",
+   "url": "https://www.broadline.ne.jp/support/20261013-100358.html",
+   "provider": "TOKAI BroadLine",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 08:53:00",
+   "datetimeEnd": "2026-10-13 09:17:00",
+   "tz": "JST",
+   "duration": "24分",
+   "durationMinutes": 24,
+   "triggers": [
+    "Request increase"
+   ],
+   "triggerNote": "",
+   "summary": "2026年10月13日通信サービスご利用不可発生のご報告（復旧）",
+   "rootCause": "特定顧客の一時的なトラフィック急増により閾値を超過し、リレーションEthernetおよびそれをアクセス回線とするクラウド接続（AWS、Azure、GCP、Oracle Cloud、IBM Cloud、IDCFクラウド）、Ethernetインターネット、トランジットサービスが一時的に利用不可になった。",
+   "extraUrl": "",
+   "archived": false
   }
  ]
 };
