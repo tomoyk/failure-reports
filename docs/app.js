@@ -533,9 +533,9 @@
       ]);
     }));
     var overflow = ttrCounts[TTR_OVERFLOW] || 0;
-    var note = "階級幅は1時間。継続時間が分かる " + ttrMinutesList.length + " 件";
+    var note = "階級幅は1時間";
     if (ttrMedian != null) note += " · 中央値 " + formatMinutes(ttrMedian);
-    note += "。クリックで絞り込み";
+    note += " · クリックで絞り込み";
     els.ttrNote.replaceChildren.apply(els.ttrNote, [
       document.createTextNode(note),
       overflow ? h("button", {

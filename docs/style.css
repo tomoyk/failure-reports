@@ -196,9 +196,17 @@ svg { display: block; }
 .stat dd small { margin-left: 4px; color: var(--text-muted); font-size: 0.8rem; font-weight: 600; }
 
 /* insights */
-.insights { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px; margin-top: 8px; }
+.insights {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 18px;
+  margin-top: 8px;
+}
 .panel { min-width: 0; padding: 20px 22px 22px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
-.panel-wide { grid-column: 1 / -1; }
+.panel-triggers { grid-column: 1; grid-row: 1 / span 2; }
+.panel-year, .panel-ttr { grid-column: 2; }
+.panel-year, .panel-ttr { padding: 14px 18px 12px; }
 .panel h3 { font-size: 1rem; }
 .panel-note { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; color: var(--text-muted); font-size: 0.78rem; }
 .ttr-overflow { padding: 2px 8px; font-size: 0.78rem; }
@@ -229,7 +237,7 @@ svg { display: block; }
 .bar-fill { display: block; height: 100%; min-width: 4px; background: hsl(var(--tone)); transition: width 0.4s ease; }
 .bar-value { text-align: right; color: var(--text-muted); font-variant-numeric: tabular-nums; font-weight: 700; }
 
-.columns { display: flex; align-items: flex-end; gap: 6px; width: 100%; height: 170px; margin-top: 14px; min-width: 0; }
+.columns { display: flex; align-items: flex-end; gap: 6px; width: 100%; height: 85px; margin-top: 8px; min-width: 0; }
 .columns.is-compact { gap: 2px; }
 .column { position: relative; flex: 1 1 0; min-width: 0; height: 100%; container-type: inline-size; container-name: yearcol; }
 .column:has(.column-year) { z-index: 1; }
@@ -246,7 +254,7 @@ svg { display: block; }
   width: 100%;
   min-width: 0;
   height: 100%;
-  padding: 2px 0 16px;
+  padding: 2px 0 14px;
   border: 0;
  
   background: transparent;
@@ -260,7 +268,7 @@ svg { display: block; }
 .column-count { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .column-button:disabled { cursor: default; }
 .column-button:disabled:hover { background: transparent; }
-.column-fill { width: 70%; max-width: 28px; min-width: 3px; height: calc(var(--ratio, 0) * 96px); min-height: 3px; background: var(--accent); opacity: 0.8; transition: height 0.4s ease; }
+.column-fill { width: 70%; max-width: 28px; min-width: 3px; height: calc(var(--ratio, 0) * 48px); min-height: 3px; background: var(--accent); opacity: 0.8; transition: height 0.4s ease; }
 .column-button:disabled .column-fill { background: var(--border); opacity: 1; }
 .y-short { display: none; }
 .column-button:hover .column-fill, .column-button[aria-pressed="true"] .column-fill { opacity: 1; }
@@ -277,9 +285,9 @@ svg { display: block; }
 .column:first-child .column-year { left: 0; transform: none; }
 .column:last-child .column-year { left: auto; right: 0; transform: none; }
 .column:first-child:last-child .column-year { left: 50%; right: auto; transform: translateX(-50%); }
-.ttr-columns { height: 190px; }
-.ttr-columns .column-button { padding-bottom: 22px; font-size: 0.72rem; }
-.ttr-columns .column-year { font-size: 0.72rem; }
+.ttr-columns { height: 85px; }
+.ttr-columns .column-button { padding-bottom: 16px; font-size: 0.65rem; }
+.ttr-columns .column-year { font-size: 0.65rem; }
 .ttr-columns .column:first-child .column-year,
 .ttr-columns .column:last-child .column-year {
   left: 50%;
@@ -474,6 +482,9 @@ dialog[open] { display: flex; flex-direction: column; animation: pop 0.18s ease-
 
 @media (max-width: 860px) {
   .insights { grid-template-columns: minmax(0, 1fr); }
+  .panel-triggers,
+  .panel-year,
+  .panel-ttr { grid-column: auto; grid-row: auto; }
   .controls { grid-template-columns: 1fr 1fr; }
   .field-search { grid-column: 1 / -1; }
 }
@@ -490,8 +501,8 @@ dialog[open] { display: flex; flex-direction: column; animation: pop 0.18s ease-
   .column-button { font-size: 0.62rem; }
   .y-full { display: none; }
   .y-short { display: inline; }
-  .ttr-columns { height: 176px; }
-  .ttr-columns .column-button { padding-bottom: 18px; }
+  .ttr-columns { height: 85px; }
+  .ttr-columns .column-button { padding-bottom: 16px; }
   .detail { padding: 20px 18px 22px; }
   .link-button { display: none; }
 }
