@@ -4,16 +4,20 @@
   var NONE = "none";
   var UNKNOWN_YEAR = "unknown";
   var UNKNOWN_TTR = "unknown";
-  var TTR_BUCKETS = [
-    { key: "lt30", max: 30, label: "30分未満", short: "<30分" },
-    { key: "m30", max: 60, label: "30分–1時間", short: "30–1h" },
-    { key: "h1", max: 120, label: "1–2時間", short: "1–2h" },
-    { key: "h2", max: 240, label: "2–4時間", short: "2–4h" },
-    { key: "h4", max: 480, label: "4–8時間", short: "4–8h" },
-    { key: "h8", max: 1440, label: "8–24時間", short: "8–24h" },
-    { key: "d1", max: Infinity, label: "1日以上", short: "≥1日" }
-  ];
-  var TTR_KEYS = TTR_BUCKETS.map(function (bucket) { return bucket.key; });
+  var TTR_OVERFLOW = "ge12";
+  var TTR_BIN_HOURS = 12;
+  var TTR_BIN_MINUTES = 60;
+  var TTR_BUCKETS = [];
+  for (var ttrBin = 0; ttrBin < TTR_BIN_HOURS; ttrBin++) {
+    TTR_BUCKETS.push({
+      key: "h" + ttrBin,
+      max: (ttrBin + 1) * TTR_BIN_MINUTES,
+      label: ttrBin + "–" + (ttrBin + 1) + "時間",
+      axis: ttrBin + "–" + (ttrBin + 1),
+      short: String(ttrBin)
+    });
+  }
+  var TTR_KEYS = TTR_BUCKETS.map(function (bucket) { return bucket.key; }).concat([TTR_OVERFLOW]);
   var data = window.FAILURE_REPORTS;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -122,14 +126,14 @@
 
   function ttrBucket(minutes) {
     if (minutes == null) return UNKNOWN_TTR;
-    for (var i = 0; i < TTR_BUCKETS.length; i++) {
-      if (minutes < TTR_BUCKETS[i].max) return TTR_BUCKETS[i].key;
-    }
-    return "d1";
+    var index = Math.floor(minutes / TTR_BIN_MINUTES);
+    if (index >= TTR_BIN_HOURS) return TTR_OVERFLOW;
+    return "h" + index;
   }
 
   function ttrLabel(key) {
     if (key === UNKNOWN_TTR) return "不明";
+    if (key === TTR_OVERFLOW) return TTR_BIN_HOURS + "時間以上";
     for (var i = 0; i < TTR_BUCKETS.length; i++) {
       if (TTR_BUCKETS[i].key === key) return TTR_BUCKETS[i].label;
     }
@@ -506,6 +510,7 @@
     }));
 
     var maxTtrCount = Math.max.apply(null, TTR_BUCKETS.map(function (bucket) { return ttrCounts[bucket.key]; }));
+    els.ttrColumns.classList.toggle("is-compact", TTR_BUCKETS.length > 10);
     els.ttrColumns.replaceChildren.apply(els.ttrColumns, TTR_BUCKETS.map(function (bucket) {
       var count = ttrCounts[bucket.key] || 0;
       return h("li", { class: "column" }, [
@@ -521,15 +526,25 @@
           h("span", { class: "column-count", text: count ? String(count) : "" }),
           h("span", { class: "column-fill", style: { "--ratio": String(maxTtrCount ? count / maxTtrCount : 0) } }),
           h("span", { class: "column-year" }, [
-            h("span", { class: "y-full", text: bucket.label }),
+            h("span", { class: "y-full", text: bucket.axis }),
             h("span", { class: "y-short", text: bucket.short })
           ])
         ])
       ]);
     }));
-    var note = "継続時間が分かる " + ttrMinutesList.length + " 件の分布。クリックで絞り込み";
-    if (ttrMedian != null) note = "継続時間が分かる " + ttrMinutesList.length + " 件 · 中央値 " + formatMinutes(ttrMedian) + "。クリックで絞り込み";
-    els.ttrNote.textContent = note;
+    var overflow = ttrCounts[TTR_OVERFLOW] || 0;
+    var note = "階級幅は1時間。継続時間が分かる " + ttrMinutesList.length + " 件";
+    if (ttrMedian != null) note += " · 中央値 " + formatMinutes(ttrMedian);
+    note += "。クリックで絞り込み";
+    els.ttrNote.replaceChildren.apply(els.ttrNote, [
+      document.createTextNode(note),
+      overflow ? h("button", {
+        class: "text-button ttr-overflow",
+        type: "button",
+        "aria-pressed": String(state.ttr === TTR_OVERFLOW),
+        onclick: function () { setTtr(state.ttr === TTR_OVERFLOW ? "" : TTR_OVERFLOW); }
+      }, [TTR_BIN_HOURS + "時間以上 " + overflow + "件"]) : null
+    ].filter(Boolean));
   }
 
   function renderChips() {

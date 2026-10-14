@@ -200,7 +200,9 @@ svg { display: block; }
 .panel { min-width: 0; padding: 20px 22px 22px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
 .panel-wide { grid-column: 1 / -1; }
 .panel h3 { font-size: 1rem; }
-.panel-note { color: var(--text-muted); font-size: 0.78rem; }
+.panel-note { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; color: var(--text-muted); font-size: 0.78rem; }
+.ttr-overflow { padding: 2px 8px; font-size: 0.78rem; }
+.ttr-overflow[aria-pressed="true"] { background: var(--accent-soft); }
 
 .bars { display: grid; gap: 6px; margin-top: 14px; }
 .bar-button {
