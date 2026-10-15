@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-14T01:29:15+00:00",
+ "generatedAt": "2026-10-15T03:36:10+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -8527,6 +8527,258 @@ window.FAILURE_REPORTS = {
    "summary": "【重要】（復旧済み）日本株・ETF全銘柄の取引停止について",
    "rootCause": "外部接続先であるみずほ証券株式会社の日本株取引に関する受発注システムに障害が発生し、日本株・ETF全銘柄の取引が停止した。サイバー攻撃や不正アクセスによるものではない。",
    "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 403,
+   "title": "Degraded performance in Codex and ChatGPT Work - OpenAI Status",
+   "url": "https://status.openai.com/incidents/01M4WKPE1EY48ZB4RZJ80YH7ES",
+   "provider": "OpenAI",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 07:05:00",
+   "datetimeEnd": "2026-10-14 09:53:00",
+   "tz": "UTC",
+   "duration": "2時間48分",
+   "durationMinutes": 168,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Degraded performance in Codex and ChatGPT Work",
+   "rootCause": "Codex（ChatGPT Desktop）とChatGPT Workでエラーが増加し、性能が低下した。緩和策を適用し、監視の後に復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 404,
+   "title": "Limited availability on gpt-image-2.5-flare and gpt-image-2.5-sunburst - OpenAI Status",
+   "url": "https://status.openai.com/incidents/01M4WYPP5QA0CJ3JV76KH285K8",
+   "provider": "OpenAI",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 10:18:00",
+   "datetimeEnd": "2026-10-14 10:58:00",
+   "tz": "UTC",
+   "duration": "40分",
+   "durationMinutes": 40,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Limited availability on gpt-image-2.5-flare and gpt-image-2.5-sunburst",
+   "rootCause": "Images APIのgpt-image-2.5-flareおよびgpt-image-2.5-sunburstで利用制限が発生した。緩和策を適用し、監視の後に復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 405,
+   "title": "Cloudflare Workers - Cron Trigger Activation Issues",
+   "url": "https://www.cloudflarestatus.com/incidents/npjny9agana8",
+   "provider": "Cloudflare",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 05:36:00",
+   "datetimeEnd": "2026-10-15 01:29:00",
+   "tz": "UTC",
+   "duration": "19時間53分",
+   "durationMinutes": 1193,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Cloudflare Workers - Cron Trigger Activation Issues",
+   "rootCause": "最近作成または変更したWorkers Cron Triggerのスケジュールが期待どおり実行されない状態になった。未変更の既存スケジュールは影響を受けなかった。修正適用後にバックログが解消し復旧した。一部の影響を受けたWorkerではスケジュールの再デプロイが必要な場合がある。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 406,
+   "title": "Elevated number of 5XX errors in PDX",
+   "url": "https://www.cloudflarestatus.com/incidents/7hicc5bfkvx3",
+   "provider": "Cloudflare",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 04:40:00",
+   "datetimeEnd": "2026-10-14 06:45:00",
+   "tz": "UTC",
+   "duration": "2時間5分",
+   "durationMinutes": 125,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Elevated number of 5XX errors in PDX",
+   "rootCause": "Portland（PDX）で5XXエラーが増加した。修正を適用して監視し、再発防止の緩和策を入れて復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 407,
+   "title": "Issues with login and viewing packages",
+   "url": "https://status.npmjs.org/incidents/nwrj52br2kjv",
+   "provider": "npm",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 09:29:00",
+   "datetimeEnd": "2026-10-14 11:44:00",
+   "tz": "UTC",
+   "duration": "2時間15分",
+   "durationMinutes": 135,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Issues with login and viewing packages",
+   "rootCause": "www.npmjs.comのログインとパッケージ閲覧でエラーと遅延が増加し、パッケージ設定へのアクセスでもエラーが増加した。修正を適用して復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 408,
+   "title": "Unable to Access dbt Platform - dbt Cloud Status",
+   "url": "https://status.getdbt.com/incidents/01M4VP33REQMCYNC5K4W21C1C6",
+   "provider": "dbt Labs",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 22:28:00",
+   "datetimeEnd": "2026-10-14 04:33:00",
+   "tz": "UTC",
+   "duration": "6時間5分",
+   "durationMinutes": 365,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Unable to Access dbt Platform",
+   "rootCause": "dbt PlatformのWebアプリケーションが読み込めず、ログインとアクセス、Admin APIが利用できない状態になった。修正をデプロイし、WebアプリとAdmin APIは通常稼働に戻った。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 409,
+   "title": "Docs.redhat.com - Outage Investigating",
+   "url": "https://status.redhat.com/incidents/prt11ynk3lpq",
+   "provider": "Red Hat",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 06:02:00",
+   "datetimeEnd": "2026-10-14 13:04:00",
+   "tz": "UTC",
+   "duration": "7時間2分",
+   "durationMinutes": 422,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Docs.redhat.com - Outage Investigating",
+   "rootCause": "docs.redhat.comで間欠的な性能問題が発生し、ページの読み込み遅延、タイムアウト、表示失敗が起きた。本番環境が安定したことを確認して復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 410,
+   "title": "Ingestion Halted for EAP data in EU",
+   "url": "https://status.sentry.io/incidents/600twx50v7vg",
+   "provider": "Sentry",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 05:46:00",
+   "datetimeEnd": "2026-10-14 08:20:00",
+   "tz": "UTC",
+   "duration": "2時間34分",
+   "durationMinutes": 154,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Ingestion Halted for EAP data in EU",
+   "rootCause": "EUリージョンのEAPデータ取り込みが停止した。修正を適用し、取り込み遅延の解消を待って復旧した。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 411,
+   "title": "Authentication errors in prod-us-west-0",
+   "url": "https://status.grafana.com/incidents/wxxw35jkm52b",
+   "provider": "Grafana",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 12:57:00",
+   "datetimeEnd": "2026-10-14 15:45:00",
+   "tz": "UTC",
+   "duration": "2時間48分",
+   "durationMinutes": 168,
+   "triggers": [
+    "Infrastructure failure"
+   ],
+   "triggerNote": "",
+   "summary": "Authentication errors in prod-us-west-0",
+   "rootCause": "Grafana Cloudのprod-us-west-0で認証エラーが増加した。認証サービスに影響するデータベースの性能低下が確認され、緩和策の後に恒久対応としてDBパッチを適用して復旧した。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 412,
+   "title": "【重要】使えるプライベートクラウド 問題発生のご連絡 - 使えるねっと",
+   "url": "https://www.tsukaeru.net/server-maintenance/20261014/",
+   "provider": "使えるねっと",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 21:54:00",
+   "datetimeEnd": "2026-10-15 01:25:00",
+   "tz": "JST",
+   "duration": "3時間31分",
+   "durationMinutes": 211,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "【重要】使えるプライベートクラウド 問題発生のご連絡",
+   "rootCause": "一部ノードが再起動し、当該ノード上の仮想マシンも再起動したため、一時的にサービスへアクセスできない状態になった。ノードおよび仮想マシンの起動完了を確認して復旧した。ノード再起動の原因は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 413,
+   "title": "【復旧】一部の工事・故障情報メールの配信に時間がかかる事象について | NTTドコモビジネス お客さまサポート",
+   "url": "https://support.ntt.com/supportTopInfo/detail/pid2500002hdg/",
+   "provider": "NTTドコモビジネス",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 12:00:00",
+   "datetimeEnd": "2026-10-14 20:10:00",
+   "tz": "JST",
+   "duration": "32時間10分",
+   "durationMinutes": 1930,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "【復旧】一部の工事・故障情報メールの配信に時間がかかる事象について",
+   "rootCause": "お客さまサポートサイトの工事・故障情報通知サービスで、一部のメール配信に遅延が発生した。サポートサイト上の工事・故障情報の閲覧は通常どおり利用できた。原因の詳細は公表されていない。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 414,
+   "title": "当社サービスの一部システムに対する不正アクセスについて | IDCフロンティア",
+   "url": "https://www.idcf.jp/news/topics/20261007001",
+   "provider": "IDCFクラウド",
+   "date": "2026-10-07",
+   "year": 2026,
+   "datetimeBegin": "2026-10-07 03:40:00",
+   "datetimeEnd": "",
+   "tz": "JST",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [
+    "External failure"
+   ],
+   "triggerNote": "",
+   "summary": "当社サービスの一部システムに対する不正アクセスについて",
+   "rootCause": "IDCFクラウド東日本リージョン1の一部（tesla／henry／pascal／jouleゾーン）に対する第三者からのランサムウェア攻撃により、仮想サーバーの停止と再起動不可が発生した。二次被害防止のため当該リージョンをネットワークから遮断し、調査と対応が継続している。報告時点では未解決。",
+   "extraUrl": "https://www.idcf.jp/news/topics/20261014001",
    "archived": false
   }
  ]
