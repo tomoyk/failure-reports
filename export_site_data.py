@@ -140,6 +140,65 @@ def host_of(url: str) -> str:
         return ""
 
 
+# Medium は掲載先であり、障害が起きたサービスではない。
+# 公開先のスラッグや著者名から、記事を書いた会社へ寄せる。
+MEDIUM_PUBLICATIONS = {
+    "xandr-tech": "Xandr",
+    "preply-engineering": "Preply",
+    "making-instapaper": "Instapaper",
+    "square-corner-blog": "Square",
+    "techmindtickle": "Mindtickle",
+    "jw-player-engineering": "JW Player",
+    "skyscannereng": "Skyscanner",
+    "civisanalytics": "Civis Analytics",
+    "florian_7764": "Platform.sh",
+    "danveloper": "Target",
+    "medium-eng": "Medium",
+    "medium-engineering": "Medium",
+}
+_MEDIUM_SUFFIXES = ("-engineering", "-tech", "-eng", "-blog", "-product")
+
+
+def medium_publication_slug(url: str) -> str:
+    """medium.com の公開先スラッグを返す。Medium 以外の URL は空文字。"""
+    host = host_of(url)
+    if host != "medium.com" and not host.endswith(".medium.com"):
+        return ""
+    if host.endswith(".medium.com"):
+        subdomain = host[: -len(".medium.com")]
+        if subdomain and subdomain not in {"www", "cdn-images-1", "miro"}:
+            return subdomain
+    try:
+        parts = [part for part in urlparse(url).path.split("/") if part]
+    except ValueError:
+        return ""
+    if not parts or parts[0] in {"m", "p"}:
+        return ""
+    return parts[0][1:] if parts[0].startswith("@") else parts[0]
+
+
+def _humanize_medium_slug(slug: str) -> str:
+    name = slug.replace("_", "-")
+    for suffix in _MEDIUM_SUFFIXES:
+        if name.endswith(suffix) and len(name) > len(suffix) + 1:
+            name = name[: -len(suffix)]
+            break
+    if name.startswith("making-") and len(name) > len("making-"):
+        name = name[len("making-") :]
+    parts = [part for part in name.split("-") if part]
+    if not parts or parts == ["medium"]:
+        return "Medium"
+    return " ".join(part.capitalize() for part in parts)
+
+
+def provider_from_medium(url: str) -> str:
+    """Medium 上の記事 URL から、障害が起きたサービスの名前を返す。"""
+    slug = medium_publication_slug(url)
+    if not slug:
+        return ""
+    return MEDIUM_PUBLICATIONS.get(slug.lower(), _humanize_medium_slug(slug))
+
+
 def provider_from_host(host: str) -> str:
     for suffix, name in HOST_PROVIDERS.items():
         if host == suffix or host.endswith("." + suffix):
@@ -160,10 +219,30 @@ def display_provider(row: sqlite3.Row) -> str:
     provider = (row["provider"] or "").strip()
     alias = PROVIDER_ALIASES.get(provider.lower())
     if alias:
-        return alias
+        provider = alias
     for hint, name in PROVIDER_URL_HINTS.items():
         if hint in provider:
-            return name
+            provider = name
+            break
+
+    medium_name = ""
+    medium_slug = ""
+    for url in (row["source_original"], row["scraped_url"], row["source2_original"]):
+        medium_slug = medium_publication_slug(url or "")
+        if medium_slug:
+            medium_name = provider_from_medium(url or "")
+            break
+    normalized_provider = re.sub(r"[\s_-]", "", provider).lower()
+    normalized_slug = re.sub(r"[\s_-]", "", medium_slug).lower()
+    stored_is_platform = (
+        not provider
+        or provider.startswith("http")
+        or bool(NO_PROVIDER.match(provider))
+        or provider.lower() == "medium"
+        or (normalized_slug and normalized_provider == normalized_slug)
+    )
+    if medium_name and stored_is_platform:
+        return medium_name
     if provider and not provider.startswith("http") and not NO_PROVIDER.match(provider):
         return provider
     for url in (row["source_original"], row["scraped_url"], row["source2_original"]):
