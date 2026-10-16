@@ -24,6 +24,7 @@
   --t-misconfiguration: 45 90% 34%;
   --t-request-increase: 225 75% 50%;
   --t-external-failure: 0 70% 46%;
+  --t-security: 305 72% 42%;
   --t-other: 215 15% 45%;
   --t-none: 215 12% 55%;
 }
@@ -52,6 +53,7 @@
   --t-misconfiguration: 48 90% 62%;
   --t-request-increase: 225 90% 74%;
   --t-external-failure: 0 85% 70%;
+  --t-security: 305 85% 74%;
   --t-other: 215 20% 72%;
   --t-none: 215 15% 62%;
 }
@@ -81,6 +83,7 @@
     --t-misconfiguration: 48 90% 62%;
     --t-request-increase: 225 90% 74%;
     --t-external-failure: 0 85% 70%;
+    --t-security: 305 85% 74%;
     --t-other: 215 20% 72%;
     --t-none: 215 15% 62%;
   }
