@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-16T10:15:57+00:00",
+ "generatedAt": "2026-10-16T10:25:09+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -9,6 +9,7 @@ window.FAILURE_REPORTS = {
   "Misconfiguration": "設定ミス",
   "Request increase": "リクエスト増加",
   "External failure": "外部要因",
+  "Security": "セキュリティ",
   "Other": "その他"
  },
  "incidents": [
@@ -1378,7 +1379,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "April 2022 Incident Review",
@@ -1654,7 +1656,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Denial of Service Attacks",
@@ -1739,7 +1742,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "Application bugs"
+    "Application bugs",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Incident report on memory leak caused by Cloudflare parser bug",
@@ -2206,7 +2210,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Cloudflare’s investigation of the January 2022 Okta compromise",
@@ -2821,7 +2826,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Details Behind Today's Internet Hacks",
@@ -2989,7 +2995,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "[xubuntu-users] Public postmortum of the brief Xubuntu.org torrent download compromise last month",
@@ -3031,7 +3038,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Postmortem for Malicious Packages Published on July 12th, 2018 - ESLint - Pluggable JavaScript Linter",
@@ -3625,7 +3633,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "CircleCI Jan 4, 2023 security incident report - CircleCI",
@@ -3923,7 +3932,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Project:Infrastructure/Incident reports/2018-06-28 Github - Gentoo wiki",
@@ -4113,7 +4123,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Basecamp network attack postmortem",
@@ -4176,7 +4187,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Security Incident Disclosure",
@@ -4386,7 +4398,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "Misconfiguration"
+    "Misconfiguration",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Major outage on travis-ci.com",
@@ -4428,7 +4441,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "How Cloudflare mitigated yet another Okta compromise",
@@ -4849,7 +4863,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "Application bugs"
+    "Application bugs",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "A Post-Mortem on the Recent Developer Story Information Leak",
@@ -4954,7 +4969,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "BrowserStack Security Incident Report — November 2014 (Resolved)",
@@ -4975,7 +4991,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Okta’s Investigation of the January 2022 Compromise",
@@ -5825,7 +5842,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Apache Killer Terminated: Zero Day Exploit, Zero Day Fix",
@@ -6573,7 +6591,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "The impact of the Salesloft Drift breach on Cloudflare and our customers",
@@ -6680,7 +6699,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "The Four Critical Security Flaws that Resulted in Last Friday's Hack",
@@ -7361,7 +7381,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Quantifying the Impact of \"Cloudbleed\"",
@@ -7424,7 +7445,8 @@ window.FAILURE_REPORTS = {
    "duration": "9時間",
    "durationMinutes": 540,
    "triggers": [
-    "Application bugs"
+    "Application bugs",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "GitHub Availability Report: May 2021",
@@ -7721,7 +7743,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "How A Cryptocurrency Miner Made Its Way onto Our Internal Kubernetes Clusters",
@@ -8016,7 +8039,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "The mechanics of a sophisticated phishing scam and how we stopped it",
@@ -8143,7 +8167,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Post Mortem: Today's Attack; Apparent Google Apps/Gmail Vulnerability; and How to Protect Yourself",
@@ -8164,7 +8189,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "Application bugs"
+    "Application bugs",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "Incident 2023-12-04: Data leak and loss in some free tier databases",
@@ -8773,7 +8799,8 @@ window.FAILURE_REPORTS = {
    "duration": "",
    "durationMinutes": null,
    "triggers": [
-    "External failure"
+    "External failure",
+    "Security"
    ],
    "triggerNote": "",
    "summary": "当社サービスの一部システムに対する不正アクセスについて",
