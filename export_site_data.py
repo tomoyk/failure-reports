@@ -34,6 +34,7 @@ PROVIDER_ALIASES = {
     "pagerduty": "PagerDuty",
     "buildkite": "Buildkite",
     "anthoropic": "Anthropic",
+    "hacks": "Mozilla",
 }
 PROVIDER_URL_HINTS = {"x.com/askplaystation": "PlayStation"}
 HOST_PROVIDERS = {
@@ -51,6 +52,7 @@ HOST_PROVIDERS = {
     "tarsnap.com": "Tarsnap",
     "fortnite.com": "Fortnite",
     "openai.com": "OpenAI",
+    "mozilla.org": "Mozilla",
 }
 NO_PROVIDER = re.compile(r"^(なし|-|ー)?$|^なし")
 GENERIC_SUBDOMAINS = {"www", "blog", "status", "engineering", "news", "support", "help"}

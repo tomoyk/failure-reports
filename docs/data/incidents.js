@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-15T23:07:51+00:00",
+ "generatedAt": "2026-10-16T10:10:08+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -1476,7 +1476,7 @@ window.FAILURE_REPORTS = {
    "id": 70,
    "title": "Retrospective and Technical Details on the recent Firefox Outage – Mozilla Hacks - the Web developer blog",
    "url": "https://hacks.mozilla.org/2022/02/retrospective-and-technical-details-on-the-recent-firefox-outage",
-   "provider": "Hacks",
+   "provider": "Mozilla",
    "date": "2022-02-02",
    "year": 2022,
    "datetimeBegin": "2022-02-02",
@@ -1666,7 +1666,7 @@ window.FAILURE_REPORTS = {
    "id": 79,
    "title": "Add-Ons Outage Post-Mortem Result – Mozilla Hacks - the Web developer blog",
    "url": "https://hacks.mozilla.org/2019/07/add-ons-outage-post-mortem-result",
-   "provider": "Hacks",
+   "provider": "Mozilla",
    "date": "2019-07-12",
    "year": 2019,
    "datetimeBegin": "2019-07-12",

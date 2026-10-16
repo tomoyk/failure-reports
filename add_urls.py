@@ -110,6 +110,7 @@ def extract_provider_from_url(url: str) -> str:
         'engineering.fb.com': 'Facebook',
         'engineering.atspotify.com': 'Spotify',
         'netflixtechblog.com': 'Netflix',
+        'mozilla.org': 'Mozilla',
         'web.archive.org': 'Archive',
     }
     
