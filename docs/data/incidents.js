@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-15T23:07:51+00:00",
+ "generatedAt": "2026-10-16T10:15:57+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -5988,7 +5988,7 @@ window.FAILURE_REPORTS = {
    "id": 283,
    "title": "GitLab .com Downtime 2014-07-08 Postmortem",
    "url": "https://docs.google.com/document/d/1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0/preview",
-   "provider": "Docs",
+   "provider": "GitLab",
    "date": "2014-07-08",
    "year": 2014,
    "datetimeBegin": "2014-07-08",
