@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-15T03:36:10+00:00",
+ "generatedAt": "2026-10-15T23:07:51+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -8779,6 +8779,132 @@ window.FAILURE_REPORTS = {
    "summary": "当社サービスの一部システムに対する不正アクセスについて",
    "rootCause": "IDCFクラウド東日本リージョン1の一部（tesla／henry／pascal／jouleゾーン）に対する第三者からのランサムウェア攻撃により、仮想サーバーの停止と再起動不可が発生した。二次被害防止のため当該リージョンをネットワークから遮断し、調査と対応が継続している。報告時点では未解決。",
    "extraUrl": "https://www.idcf.jp/news/topics/20261014001",
+   "archived": false
+  },
+  {
+   "id": 415,
+   "title": "Network Performance Issues in Eastern North America",
+   "url": "https://www.cloudflarestatus.com/incidents/fiv2bu3zf8kx",
+   "provider": "Cloudflare",
+   "date": "2026-10-15",
+   "year": 2026,
+   "datetimeBegin": "2026-10-15 20:48:00",
+   "datetimeEnd": "2026-10-15 21:38:00",
+   "tz": "UTC",
+   "duration": "0時間50分",
+   "durationMinutes": 50,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Network Performance Issues in Eastern North America",
+   "rootCause": "公式は原因詳細未公表。Ashburn（IAD）およびNewark（EWR）施設でのネットワーク性能問題。顧客影響はレイテンシ上昇・エラー。約50分で復旧。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 416,
+   "title": "Network Performance Issues in London",
+   "url": "https://www.cloudflarestatus.com/incidents/ybyy2whvd8ef",
+   "provider": "Cloudflare",
+   "date": "2026-10-15",
+   "year": 2026,
+   "datetimeBegin": "2026-10-15 17:33:00",
+   "datetimeEnd": "2026-10-15 17:46:00",
+   "tz": "UTC",
+   "duration": "0時間13分",
+   "durationMinutes": 13,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Network Performance Issues in London",
+   "rootCause": "公式は原因詳細未公表。ロンドン（LHR）施設のネットワーク性能問題。Durable Objects、R2、RealtimeKitが影響を受けた。約13分で復旧。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 417,
+   "title": "DeepSeek 网页/API 部分中断（DeepSeek Web/API Partially Unavailable） · DeepSeek Status",
+   "url": "https://status.deepseek.com/incidents/7116348214287",
+   "provider": "DeepSeek",
+   "date": "2026-10-15",
+   "year": 2026,
+   "datetimeBegin": "2026-10-15 00:11:00",
+   "datetimeEnd": "2026-10-15 05:04:00",
+   "tz": "UTC",
+   "duration": "4時間52分",
+   "durationMinutes": 292,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "DeepSeek Web/API Partially Unavailable",
+   "rootCause": "公式ステータスは原因の詳細を公開していない。「原因を特定し修正を実施」と記載。ウェブチャットとAPI（報道ではV4 Pro、V4.1 Flash）が一時利用不可。公式開放プラットフォームは影響を受けたAPI利用者へ補償（7日分の消耗金額を贈金で返還）を発表したとの報道がある。",
+   "extraUrl": "https://technode.com/2026/10/15/deepseek-implements-fix-after-partial-outage-affects-chat-and-api-services/",
+   "archived": false
+  },
+  {
+   "id": 418,
+   "title": "Widespread feature degradation - OpenAI Status",
+   "url": "https://status.openai.com/incidents/01M506BA4XRSWH7THR53HQGN3Z",
+   "provider": "OpenAI",
+   "date": "2026-10-15",
+   "year": 2026,
+   "datetimeBegin": "2026-10-15 16:29:00",
+   "datetimeEnd": "2026-10-15 18:56:00",
+   "tz": "UTC",
+   "duration": "2時間27分",
+   "durationMinutes": 147,
+   "triggers": [
+    "Other"
+   ],
+   "triggerNote": "報告時点では原因は調査中",
+   "summary": "Widespread feature degradation",
+   "rootCause": "ChatGPTモバイルのログイン/サインアップを含む広範な機能劣化。緩和策適用後に復旧。公式の根本原因は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 419,
+   "title": "Nasdaq resolves network disruption that caused data gaps, source says | MarketScreener",
+   "url": "https://www.marketscreener.com/news/nasdaq-reports-network-disruption-us-equities-data-feeds-impacted-ce785dd3de8df72d",
+   "provider": "Nasdaq",
+   "date": "2026-10-15",
+   "year": 2026,
+   "datetimeBegin": "2026-10-15 15:27:50",
+   "datetimeEnd": "",
+   "tz": "UTC",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [
+    "Infrastructure failure"
+   ],
+   "triggerNote": "",
+   "summary": "Nasdaq reports network disruption; US equities data feeds impacted",
+   "rootCause": "Carteret（ニュージャージー）施設のネットワーク障害により、Nasdaq・Nasdaq Texas・Nasdaq PSXの米株データフィード（A/B両系）に断続的欠落。取引自体への影響なし。シカゴ側バックアップフィードへ切替案内。関係者はルーチンなネットワーク問題と説明。公式ステータスページのインシデントIDは確認できず、終了時刻は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 420,
+   "title": "Tableau Feature Degradation (Load a View) | Salesforce Trust Status",
+   "url": "https://status.salesforce.com/incidents/20004486",
+   "provider": "Salesforce",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 18:36:00",
+   "datetimeEnd": "",
+   "tz": "UTC",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [
+    "Application bugs"
+   ],
+   "triggerNote": "",
+   "summary": "Tableau Feature Degradation (Load a View)",
+   "rootCause": "Tableau Cloudの「ビューの読み込み」（Load a View）等で機能劣化。ダッシュボードやワークブックが読み込めない、「Loading data sources」で停止、または開くのに時間がかかる。影響範囲が当初より広いと更新。公式は最近の変更に起因し、データソース読み込み中にプロセスがデッドロックする可能性を指摘。修正は検証済みで本番展開中、関連機能の無効化緩和が継続。復旧ETAなし。報告時点では未解決。",
+   "extraUrl": "",
    "archived": false
   }
  ]
