@@ -81,8 +81,22 @@ def test_exported_incidents_match_parser() -> None:
         assert incident["durationMinutes"] == expected, incident["duration"]
 
 
+def test_fastly_june_8_timeline() -> None:
+    import json
+    from pathlib import Path
+
+    text = Path("docs/data/incidents.js").read_text(encoding="utf-8")
+    payload = json.loads(text.replace("window.FAILURE_REPORTS = ", "", 1).rstrip(";\n"))
+    incident = next(item for item in payload["incidents"] if "summary-of-june-8-outage" in item["url"])
+    assert incident["date"] == "2021-06-08"
+    assert incident["datetimeBegin"] == "2021-06-08T09:47:00Z"
+    assert "12:35" in incident["datetimeEnd"]
+    assert incident["durationMinutes"] == 2 * 60 + 48
+
+
 if __name__ == "__main__":
     test_known_durations()
     test_vague_durations_are_none()
     test_exported_incidents_match_parser()
+    test_fastly_june_8_timeline()
     print(f"ok: {len(CASES)} parsed, {len(UNPARSED)} skipped, export matches")
