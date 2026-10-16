@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from export_site_data import provider_from_medium
 from incident_scraper import (
     make_session,
     scrape_url,
@@ -121,12 +122,11 @@ def extract_provider_from_url(url: str) -> str:
     # その他のパターン
     if 'github.io' in domain or 'github.com' in url:
         return 'GitHub'
-    if 'medium.com' in domain:
-        # Medium記事の場合、ドメインから組織名を抽出
-        parts = domain.split('.')
-        if len(parts) > 2:
-            return parts[0].title()
-        return 'Medium'
+    if 'medium.com' in domain or 'medium.com' in url:
+        # 掲載先が Medium でも、サービス名は記事を書いた会社にする。
+        resolved = provider_from_medium(url)
+        if resolved:
+            return resolved
     if 'engineering' in domain or 'tech' in domain:
         # engineering/tech blog の場合
         parts = domain.replace('www.', '').split('.')
