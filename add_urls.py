@@ -110,6 +110,7 @@ def extract_provider_from_url(url: str) -> str:
         'engineering.fb.com': 'Facebook',
         'engineering.atspotify.com': 'Spotify',
         'netflixtechblog.com': 'Netflix',
+        'allegro.tech': 'Allegro',
         'web.archive.org': 'Archive',
     }
     
@@ -128,9 +129,13 @@ def extract_provider_from_url(url: str) -> str:
             return parts[0].title()
         return 'Medium'
     if 'engineering' in domain or 'tech' in domain:
-        # engineering/tech blog の場合
-        parts = domain.replace('www.', '').split('.')
-        if len(parts) >= 2:
+        # blog.example.tech の先頭を会社名にしない。
+        cleaned = domain
+        for prefix in ('www.', 'blog.', 'status.'):
+            if cleaned.startswith(prefix):
+                cleaned = cleaned[len(prefix):]
+        parts = cleaned.split('.')
+        if len(parts) >= 2 and parts[0].lower() not in {'blog', 'www', 'status'}:
             return parts[0].title()
     
     # デフォルト: ドメインの主要部分を使用

@@ -51,6 +51,7 @@ HOST_PROVIDERS = {
     "tarsnap.com": "Tarsnap",
     "fortnite.com": "Fortnite",
     "openai.com": "OpenAI",
+    "allegro.tech": "Allegro",
 }
 NO_PROVIDER = re.compile(r"^(なし|-|ー)?$|^なし")
 GENERIC_SUBDOMAINS = {"www", "blog", "status", "engineering", "news", "support", "help"}
@@ -165,7 +166,8 @@ def display_provider(row: sqlite3.Row) -> str:
         if hint in provider:
             return name
     if provider and not provider.startswith("http") and not NO_PROVIDER.match(provider):
-        return provider
+        if provider.lower() != "blog":
+            return provider
     for url in (row["source_original"], row["scraped_url"], row["source2_original"]):
         host = host_of(url or "")
         if host and host != "web.archive.org":

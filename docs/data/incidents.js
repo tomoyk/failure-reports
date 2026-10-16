@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-15T23:07:51+00:00",
+ "generatedAt": "2026-10-16T10:13:03+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -3531,7 +3531,7 @@ window.FAILURE_REPORTS = {
    "id": 167,
    "title": "Postmortem — why Allegro went down",
    "url": "https://blog.allegro.tech/2018/08/postmortem-why-allegro-went-down.html",
-   "provider": "Blog",
+   "provider": "Allegro",
    "date": "2018-07-18",
    "year": 2018,
    "datetimeBegin": "2018-07-18",
