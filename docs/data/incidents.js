@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-16T10:25:09+00:00",
+ "generatedAt": "2026-10-17T07:59:02+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -5112,19 +5112,19 @@ window.FAILURE_REPORTS = {
    "title": "Summary of June 8 outage | Fastly",
    "url": "https://fastly.com/blog/summary-of-june-8-outage",
    "provider": "Fastly",
-   "date": null,
-   "year": null,
-   "datetimeBegin": "",
-   "datetimeEnd": "",
+   "date": "2021-06-08",
+   "year": 2021,
+   "datetimeBegin": "2021-06-08T09:47:00Z",
+   "datetimeEnd": "2021-06-08T10:36:00Z（95%復旧）／11:00（大半が復旧）／12:35（緩和）",
    "tz": "UTC",
-   "duration": "",
-   "durationMinutes": null,
+   "duration": "49分（95%復旧）／2時間48分（緩和）",
+   "durationMinutes": 168,
    "triggers": [
     "Application bugs"
    ],
    "triggerNote": "",
    "summary": "Summary of June 8 outage | Fastly",
-   "rootCause": "未発見のソフトウェアのバグが正当な顧客設定の変更をきっかけに6月8日に表面化し、Fastlyで世界規模の障害になった。一分以内に検知し、その設定を無効化した。",
+   "rootCause": "未発見のソフトウェアのバグが、正当な顧客設定の変更をきっかけに2021年6月8日09:47 UTCに表面化し、ネットワークの85%がエラーを返した。09:48に検知して設定を無効化し、49分後の10:36には95%が通常運用へ戻った。11:00には大半が復旧し、12:35 UTCにインシデントを緩和した。",
    "extraUrl": "",
    "archived": false
   },
