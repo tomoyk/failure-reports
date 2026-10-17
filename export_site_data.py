@@ -11,8 +11,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+from classify_root_causes import LABELS as ROOT_CAUSE_LABELS
+
 DEFAULT_DATABASE = Path("incidents.sqlite")
 DEFAULT_OUTPUT = Path("docs/data/incidents.js")
+EXCLUDED_TITLE = "RFC 789: Vulnerabilities of network control protocols: An example"
 
 TRIGGER_LABELS = {
     "Application bugs": "アプリケーションのバグ",
@@ -209,11 +212,35 @@ def clean(value: str | None) -> str:
     return (value or "").strip()
 
 
+def parse_root_causes(value: str) -> list[str]:
+    tags = []
+    for part in (value or "").split(","):
+        tag = part.strip()
+        if tag in ROOT_CAUSE_LABELS and tag not in tags:
+            tags.append(tag)
+    return tags
+
+
+def is_excluded(row: sqlite3.Row) -> bool:
+    title = clean(row["scraped_title"])
+    if title == EXCLUDED_TITLE:
+        return True
+    urls = " ".join(
+        clean(row[column])
+        for column in ("scraped_url", "source_original", "source2_original")
+    )
+    return bool(re.search(r"rfc789", urls, re.IGNORECASE))
+
+
 def build_records(connection: sqlite3.Connection) -> list[dict]:
     connection.row_factory = sqlite3.Row
     records = []
+    columns = {info[1] for info in connection.execute("PRAGMA table_info(incidents)")}
     for row in connection.execute("SELECT * FROM incidents ORDER BY id"):
+        if is_excluded(row):
+            continue
         triggers, trigger_note = parse_triggers(row["trigger"])
+        root_causes = parse_root_causes(row["root_cause_tags"]) if "root_cause_tags" in columns else []
         begin = parse_date(row["datetime_begin"])
         articles = clean(row["articles"])
         records.append(
@@ -231,6 +258,7 @@ def build_records(connection: sqlite3.Connection) -> list[dict]:
                 "durationMinutes": parse_duration_minutes(row["duration"]),
                 "triggers": triggers,
                 "triggerNote": trigger_note,
+                "rootCauses": root_causes,
                 "summary": "" if articles.startswith("http") else articles,
                 "rootCause": clean(row["root_cause_analysis"]),
                 "extraUrl": clean(row["source2_original"])
@@ -251,6 +279,7 @@ def export(database: Path, output: Path) -> int:
     payload = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "triggerLabels": {**TRIGGER_LABELS, OTHER_TRIGGER: OTHER_TRIGGER_LABEL},
+        "rootCauseLabels": ROOT_CAUSE_LABELS,
         "incidents": records,
     }
     output.parent.mkdir(parents=True, exist_ok=True)

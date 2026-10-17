@@ -24,6 +24,7 @@
   var els = {
     stats: $("stats"),
     triggerBars: $("trigger-bars"),
+    causeBars: $("cause-bars"),
     yearColumns: $("year-columns"),
     ttrColumns: $("ttr-columns"),
     ttrNote: $("ttr-note"),
@@ -34,6 +35,7 @@
     sort: $("sort"),
     analyzed: $("analyzed"),
     chips: $("trigger-chips"),
+    causeChips: $("cause-chips"),
     count: $("count"),
     reset: $("reset"),
     emptyReset: $("empty-reset"),
@@ -92,6 +94,16 @@
     if (key === NONE) return "未分類";
     return data.triggerLabels[key] || key;
   }
+
+  function causeLabel(key) {
+    return (data.rootCauseLabels && data.rootCauseLabels[key]) || key;
+  }
+
+  function causeTone(key) {
+    return "var(--c-" + slug(key) + ")";
+  }
+
+  var CAUSE_MUTED = { undetermined: true, "not-a-report": true };
 
   function primaryKey(incident) {
     return incident.triggers.length ? incident.triggers[0] : NONE;
@@ -221,7 +233,9 @@
       incident.rootCause,
       incident.triggerNote,
       incident.triggers.map(triggerLabel).join(" "),
-      incident.triggers.join(" ")
+      incident.triggers.join(" "),
+      (incident.rootCauses || []).map(causeLabel).join(" "),
+      (incident.rootCauses || []).join(" ")
     ].join("\n"));
   });
   var ttrMinutesList = incidents.map(function (incident) { return incident.ttrMinutes; }).filter(function (value) {
@@ -244,6 +258,20 @@
   var triggerOrder = triggerKeys.slice().sort(function (a, b) { return triggerCounts[b] - triggerCounts[a]; });
   if (triggerCounts[NONE]) triggerOrder.push(NONE);
 
+  var causeKeys = Object.keys(data.rootCauseLabels || {}).filter(function (key) {
+    return incidents.some(function (incident) { return (incident.rootCauses || []).indexOf(key) !== -1; });
+  });
+  var causeCounts = {};
+  causeKeys.forEach(function (key) {
+    causeCounts[key] = incidents.filter(function (incident) {
+      return (incident.rootCauses || []).indexOf(key) !== -1;
+    }).length;
+  });
+  var causeTail = causeKeys.filter(function (key) { return CAUSE_MUTED[key]; });
+  var causeOrder = causeKeys.filter(function (key) { return !CAUSE_MUTED[key]; }).sort(function (a, b) {
+    return causeCounts[b] - causeCounts[a];
+  }).concat(causeTail.sort(function (a, b) { return causeCounts[b] - causeCounts[a]; }));
+
   var years = incidents.map(function (incident) { return incident.year; }).filter(Boolean);
   var minYear = Math.min.apply(null, years);
   var maxYear = Math.max.apply(null, years);
@@ -258,7 +286,11 @@
     return providerCounts[b] - providerCounts[a] || a.localeCompare(b);
   });
 
+<<<<<<< HEAD
+  var state = { q: "", triggers: [], causes: [], providers: [], year: "", sort: "date-desc", analyzed: false };
+=======
   var state = { q: "", triggers: [], provider: "", year: "", ttr: "", sort: "date-desc", analyzed: false };
+>>>>>>> origin/main
 
   function readUrl() {
     var params = new URLSearchParams(location.search);
@@ -266,7 +298,12 @@
     state.triggers = (params.get("t") || "").split(",").filter(function (key) {
       return key === NONE || triggerKeys.indexOf(key) !== -1;
     });
-    state.provider = providerCounts[params.get("p")] ? params.get("p") : "";
+    state.causes = (params.get("c") || "").split(",").filter(function (key) {
+      return causeKeys.indexOf(key) !== -1;
+    });
+    state.providers = (params.get("p") || "").split(",").filter(function (name) {
+      return providerCounts[name];
+    });
     var year = params.get("y");
     state.year = year === UNKNOWN_YEAR || yearCounts[year] ? year : "";
     var ttr = params.get("d");
@@ -280,7 +317,8 @@
     var params = new URLSearchParams();
     if (state.q) params.set("q", state.q);
     if (state.triggers.length) params.set("t", state.triggers.join(","));
-    if (state.provider) params.set("p", state.provider);
+    if (state.causes.length) params.set("c", state.causes.join(","));
+    if (state.providers.length) params.set("p", state.providers.join(","));
     if (state.year) params.set("y", state.year);
     if (state.ttr) params.set("d", state.ttr);
     if (state.sort !== "date-desc") params.set("s", state.sort);
@@ -291,7 +329,11 @@
   }
 
   function isFiltered() {
+<<<<<<< HEAD
+    return !!(state.q || state.triggers.length || state.causes.length || state.providers.length || state.year || state.analyzed);
+=======
     return !!(state.q || state.triggers.length || state.provider || state.year || state.ttr || state.analyzed);
+>>>>>>> origin/main
   }
 
   function searchTerms() {
@@ -299,7 +341,7 @@
   }
 
   function matches(incident, terms) {
-    if (state.provider && incident.provider !== state.provider) return false;
+    if (state.providers.length && state.providers.indexOf(incident.provider) === -1) return false;
     if (state.year === UNKNOWN_YEAR && incident.year) return false;
     if (state.year && state.year !== UNKNOWN_YEAR && String(incident.year) !== state.year) return false;
     if (state.ttr && incident.ttr !== state.ttr) return false;
@@ -309,6 +351,12 @@
         return key === NONE ? !incident.triggers.length : incident.triggers.indexOf(key) !== -1;
       });
       if (!hit) return false;
+    }
+    if (state.causes.length) {
+      var causeHit = state.causes.some(function (key) {
+        return (incident.rootCauses || []).indexOf(key) !== -1;
+      });
+      if (!causeHit) return false;
     }
     return terms.every(function (term) { return incident.haystack.indexOf(term) !== -1; });
   }
@@ -367,6 +415,38 @@
     }));
   }
 
+  function causeTagList(incident) {
+    var keys = incident.rootCauses || [];
+    if (!keys.length) return null;
+    return h("ul", { class: "tags", "aria-label": "根本原因" }, keys.map(function (key) {
+      return h("li", {
+        class: "tag tag-cause" + (CAUSE_MUTED[key] ? " is-muted" : ""),
+        style: { "--tone": causeTone(key) },
+        text: causeLabel(key)
+      });
+    }));
+  }
+
+  function providerButton(provider, regex) {
+    var selected = state.providers.indexOf(provider) !== -1;
+    var name = h("span", { class: "provider-name" });
+    highlight(name, provider, regex);
+    return h("button", {
+      class: "provider provider-button",
+      type: "button",
+      "aria-pressed": String(selected),
+      "aria-label": provider + (selected ? "の絞り込みを解除" : "を絞り込み条件に追加"),
+      onclick: function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        toggleProvider(provider);
+      }
+    }, [
+      avatar(provider),
+      name
+    ]);
+  }
+
   function renderCard(incident, regex) {
     var link = safeUrl(incident.url);
     var titleNode = h("h2", { class: "card-title" });
@@ -378,6 +458,10 @@
 
     return h("article", { class: "card", style: { "--tone": tone(primaryKey(incident)) } }, [
       h("div", { class: "card-head" }, [
+<<<<<<< HEAD
+        providerButton(incident.provider, regex),
+        h("time", { class: "date" + (date ? "" : " is-unknown"), datetime: incident.date || false, text: date || "日時不明" })
+=======
         h("span", { class: "provider" }, [
           avatar(incident.provider),
           highlight(h("span", { class: "provider-name" }), incident.provider, regex)
@@ -386,13 +470,14 @@
           h("time", { class: "date" + (date ? "" : " is-unknown"), datetime: incident.date || false, text: date || "日時不明" }),
           incident.ttrMinutes != null ? h("span", { class: "ttr", text: formatMinutes(incident.ttrMinutes) }) : null
         ])
+>>>>>>> origin/main
       ]),
       titleNode,
       cause
         ? highlight(h("p", { class: "card-cause" }), cause, regex)
         : h("p", { class: "card-cause is-empty", text: "原因分析はまだ入力されていません。" }),
       h("div", { class: "card-foot" }, [
-        tagList(incident),
+        h("div", { class: "card-tags" }, [tagList(incident), causeTagList(incident)]),
         h("button", {
           class: "detail-button",
           type: "button",
@@ -482,6 +567,25 @@
       ]);
     }));
 
+    var maxCause = Math.max.apply(null, causeOrder.map(function (key) { return causeCounts[key]; }).concat([1]));
+    els.causeBars.replaceChildren.apply(els.causeBars, causeOrder.map(function (key) {
+      var pressed = state.causes.indexOf(key) !== -1;
+      return h("li", {}, [
+        h("button", {
+          class: "bar-button",
+          type: "button",
+          "aria-pressed": String(pressed),
+          onclick: function () { toggleCause(key); }
+        }, [
+          h("span", { class: "bar-label", text: causeLabel(key) }),
+          h("span", { class: "bar-track", "aria-hidden": "true" }, [
+            h("span", { class: "bar-fill", style: { "--tone": causeTone(key), width: (causeCounts[key] / maxCause * 100) + "%" } })
+          ]),
+          h("span", { class: "bar-value", text: String(causeCounts[key]) })
+        ])
+      ]);
+    }));
+
     var yearList = [];
     for (var year = minYear; year <= maxYear; year++) yearList.push(year);
     var labels = yearLabelSet(yearList);
@@ -557,6 +661,15 @@
         onclick: function () { toggleTrigger(key); }
       }, [triggerLabel(key)]);
     }));
+    els.causeChips.replaceChildren.apply(els.causeChips, causeOrder.map(function (key) {
+      return h("button", {
+        class: "chip",
+        type: "button",
+        style: { "--tone": causeTone(key) },
+        "aria-pressed": String(state.causes.indexOf(key) !== -1),
+        onclick: function () { toggleCause(key); }
+      }, [causeLabel(key)]);
+    }));
   }
 
   function populateSelects() {
@@ -576,7 +689,13 @@
 
   function syncControls() {
     els.q.value = state.q;
-    els.provider.value = state.provider;
+    var providerPlaceholder = els.provider.querySelector("option");
+    if (providerPlaceholder) {
+      providerPlaceholder.textContent = state.providers.length > 1
+        ? "複数のサービス (" + state.providers.length + ")"
+        : "すべてのサービス";
+    }
+    els.provider.value = state.providers.length === 1 ? state.providers[0] : "";
     els.year.value = state.year;
     els.sort.value = state.sort;
     els.analyzed.checked = state.analyzed;
@@ -595,6 +714,21 @@
     var index = state.triggers.indexOf(key);
     if (index === -1) state.triggers.push(key);
     else state.triggers.splice(index, 1);
+    update();
+  }
+
+  function toggleCause(key) {
+    var index = state.causes.indexOf(key);
+    if (index === -1) state.causes.push(key);
+    else state.causes.splice(index, 1);
+    update();
+  }
+
+  function toggleProvider(name) {
+    var index = state.providers.indexOf(name);
+    if (index === -1) state.providers.push(name);
+    else state.providers.splice(index, 1);
+    if (els.dialog.open) els.dialog.close();
     update();
   }
 
@@ -641,11 +775,12 @@
     els.detailBody.style.setProperty("--tone", tone(primaryKey(incident)));
     els.detailBody.replaceChildren.apply(els.detailBody, [
       h("div", { class: "detail-top" }, [
-        h("span", { class: "provider" }, [avatar(incident.provider), h("span", { class: "provider-name", text: incident.provider })]),
+        providerButton(incident.provider),
         h("button", { class: "close-button", type: "button", "aria-label": "閉じる", onclick: function () { els.dialog.close(); } }, ["×"])
       ]),
       h("h2", { id: "detail-title", text: incident.title }),
       tagList(incident),
+      causeTagList(incident),
       facts.length ? h("dl", { class: "facts" }, facts) : null,
       h("section", { class: "detail-section" }, [
         h("h3", { text: "原因分析" }),
@@ -666,7 +801,8 @@
   function resetFilters() {
     state.q = "";
     state.triggers = [];
-    state.provider = "";
+    state.causes = [];
+    state.providers = [];
     state.year = "";
     state.ttr = "";
     state.analyzed = false;
@@ -676,7 +812,12 @@
   function setupEvents() {
     els.controls.addEventListener("submit", function (event) { event.preventDefault(); });
     els.q.addEventListener("input", function () { state.q = els.q.value.trim(); update(); });
-    els.provider.addEventListener("change", function () { state.provider = els.provider.value; update(); });
+    els.provider.addEventListener("change", function () {
+      var value = els.provider.value;
+      if (!value) state.providers = [];
+      else if (state.providers.indexOf(value) === -1) state.providers.push(value);
+      update();
+    });
     els.year.addEventListener("change", function () { state.year = els.year.value; update(); });
     els.sort.addEventListener("change", function () { state.sort = els.sort.value; update(); });
     els.analyzed.addEventListener("change", function () { state.analyzed = els.analyzed.checked; update(); });

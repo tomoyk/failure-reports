@@ -32,6 +32,7 @@
 | `articles` | TEXT | 記事タイトル |
 | `root_cause_analysis` | TEXT | 根本原因分析 |
 | `trigger` | TEXT | トリガー（障害種類） |
+| `root_cause_tags` | TEXT | 根本原因の分類（カンマ区切り。公開記事から付与） |
 | `scraped_url` | TEXT | スクレイピングしたURL |
 | `scraped_final_url` | TEXT | リダイレクト後の最終URL |
 | `scraped_title` | TEXT | スクレイピングしたページタイトル |
