@@ -154,6 +154,20 @@ def host_of(url: str) -> str:
         return ""
 
 
+GOOGLE_DOC_PROVIDERS = {
+    "1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0": "GitLab",
+}
+
+
+def provider_from_google_doc(url: str) -> str:
+    """Google ドキュメントの掲載先ではなく、文書が書いているサービスの名前を返す。"""
+    text = url or ""
+    for doc_id, name in GOOGLE_DOC_PROVIDERS.items():
+        if doc_id in text:
+            return name
+    return ""
+
+
 def provider_from_host(host: str) -> str:
     for suffix, name in HOST_PROVIDERS.items():
         if host == suffix or host.endswith("." + suffix):
@@ -171,6 +185,10 @@ def provider_from_host(host: str) -> str:
 
 
 def display_provider(row: sqlite3.Row) -> str:
+    for url in (row["source_original"], row["scraped_url"], row["source2_original"]):
+        document_provider = provider_from_google_doc(url or "")
+        if document_provider:
+            return document_provider
     provider = (row["provider"] or "").strip()
     alias = PROVIDER_ALIASES.get(provider.lower())
     if alias:
