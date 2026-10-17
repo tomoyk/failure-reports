@@ -1,5 +1,5 @@
 window.FAILURE_REPORTS = {
- "generatedAt": "2026-10-17T09:07:14+00:00",
+ "generatedAt": "2026-10-17T09:25:47+00:00",
  "triggerLabels": {
   "Application bugs": "アプリケーションのバグ",
   "Hardware fault": "ハードウェア障害",
@@ -10242,6 +10242,278 @@ window.FAILURE_REPORTS = {
    "date": "2026-10-13",
    "year": 2026,
    "datetimeBegin": "2026-10-13 18:36:00",
+   "datetimeEnd": "2026-10-16 21:30:00",
+   "tz": "UTC",
+   "duration": "74時間54分",
+   "durationMinutes": 4494,
+   "triggers": [
+    "Application bugs"
+   ],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Tableau Feature Degradation (Load a View)",
+   "rootCause": "Tableau Cloudの「ビューの読み込み」（Load a View）等で機能劣化。ダッシュボードやワークブックが読み込めない、「Loading data sources」で停止、または開くのに時間がかかる。公式は最近の変更に起因し、データソース読み込み中にプロセスがデッドロックする可能性を指摘。関連機能の無効化で緩和しつつコード修正を展開し、2026-10-16 21:30 UTCに全リージョンへのデプロイが完了して復旧。公式は技術的トリガー・根本原因・再発防止の調査を実施すると発表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 421,
+   "title": "High error rate on 1Password.com",
+   "url": "https://status.1password.com/incidents/g012v1sp38m7",
+   "provider": "1Password",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 23:45:00",
+   "datetimeEnd": "",
+   "tz": "UTC",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "High error rate on 1Password.com",
+   "rootCause": "1Password.comで高エラー率が発生し、サインイン、デバイス間の同期、パスワード等へのアクセス、管理コンソールが影響を受けた。公式は原因詳細を未公表。修正はデプロイ済みで監視中（Monitoring）。終了時刻は未確定。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 422,
+   "title": "Some users are unable to view vault profiles using the web interface",
+   "url": "https://status.1password.com/incidents/176cdjlx7tt3",
+   "provider": "1Password",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 17:31:00",
+   "datetimeEnd": "2026-10-16 17:42:00",
+   "tz": "UTC",
+   "duration": "0時間11分",
+   "durationMinutes": 11,
+   "triggers": [
+    "Application bugs"
+   ],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Some users are unable to view vault profiles using the web interface",
+   "rootCause": "Webインターフェースでボールトプロファイルを表示すると空白ページになる不具合。公式は根本原因を特定して修正をデプロイし解消したと発表。原因の技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 423,
+   "title": "Cloudflare Fedramp Dashboard and Access",
+   "url": "https://www.cloudflarestatus.com/incidents/qwx5xtl8mv7d",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 17:56:00",
+   "datetimeEnd": "2026-10-16 19:09:00",
+   "tz": "UTC",
+   "duration": "1時間13分",
+   "durationMinutes": 73,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Cloudflare Fedramp Dashboard and Access",
+   "rootCause": "Cloudflare FedRAMP Dashboardおよび関連するCloudflare Accessへのアクセス障害。FedRAMP Accessで保護されたダッシュボードやアプリケーションへのログインが影響。CDNのキャッシュ配信やエッジの他セキュリティ機能には影響なし。公式は原因を特定して修正を実施したと発表。技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 424,
+   "title": "Cloudflare Access Availability Issues",
+   "url": "https://www.cloudflarestatus.com/incidents/xh6wdjrte1ez",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 09:20:00",
+   "datetimeEnd": "2026-10-16 09:59:00",
+   "tz": "UTC",
+   "duration": "0時間39分",
+   "durationMinutes": 39,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Cloudflare Access Availability Issues",
+   "rootCause": "Cloudflare Accessでログイン後に利用できない障害。公式は原因を特定して修正を実施し解消したと発表。技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 425,
+   "title": "Cloudflare Dashboard sign up issues",
+   "url": "https://www.cloudflarestatus.com/incidents/mwmwvd4x60mh",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 10:15:00",
+   "datetimeEnd": "2026-10-16 11:24:00",
+   "tz": "UTC",
+   "duration": "1時間9分",
+   "durationMinutes": 69,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Cloudflare Dashboard sign up issues",
+   "rootCause": "一部ユーザーがCloudflare Dashboardに新規登録できない障害。公式は修正を実施し解消したと発表。原因の技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 426,
+   "title": "Increased HTTP 5xx Errors Ashburn",
+   "url": "https://www.cloudflarestatus.com/incidents/y6kg9sv5g8rv",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 12:58:00",
+   "datetimeEnd": "2026-10-16 13:03:00",
+   "tz": "UTC",
+   "duration": "0時間5分",
+   "durationMinutes": 5,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Increased HTTP 5xx Errors Ashburn",
+   "rootCause": "Ashburn（IAD）でHTTP 5xxエラーが一時的に増加。公式の影響窓は12:58–13:03 UTC。原因の技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 427,
+   "title": "Network Performance Issues in Thailand",
+   "url": "https://www.cloudflarestatus.com/incidents/vt8q2vjyx9vd",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 06:48:00",
+   "datetimeEnd": "2026-10-16 07:30:00",
+   "tz": "UTC",
+   "duration": "0時間42分",
+   "durationMinutes": 42,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Network Performance Issues in Thailand",
+   "rootCause": "バンコク（Bangkok）でネットワーク性能問題。06:48–07:30 UTCに応答時間の上昇と5xxエラーの増加があった可能性。公式は調査のうえ解消したと発表。原因の技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 428,
+   "title": "Network issues in Incheon (ICN)",
+   "url": "https://www.cloudflarestatus.com/incidents/w43n5lblyvu8",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 01:13:00",
+   "datetimeEnd": "2026-10-16 02:11:00",
+   "tz": "UTC",
+   "duration": "0時間58分",
+   "durationMinutes": 58,
+   "triggers": [
+    "External failure"
+   ],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Network issues in Incheon (ICN)",
+   "rootCause": "ソウルのICN-Aコロケーションでネットワーク性能が低下。公式はKINX配下の利用者でTTFB遅延とNetwork Error Logging指標の上昇があったとし、経路混雑（network path congestion）が原因と説明。その後ベースラインに復帰。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 429,
+   "title": "Workers Cron Triggers issues",
+   "url": "https://www.cloudflarestatus.com/incidents/51udczr46uj2",
+   "provider": "Cloudflare",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 00:01:00",
+   "datetimeEnd": "2026-10-16 01:06:00",
+   "tz": "UTC",
+   "duration": "1時間5分",
+   "durationMinutes": 65,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Workers Cron Triggers issues",
+   "rootCause": "Workers Cron Triggersの障害。一部顧客でcronが起動しない可能性。公式は安定化したと発表。原因の技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 430,
+   "title": "INC20000287",
+   "url": "https://status.snowflake.com/incidents/939svhhtcj1g",
+   "provider": "Snowflake",
+   "date": "2026-10-15",
+   "year": 2026,
+   "datetimeBegin": "2026-10-15 23:50:00",
+   "datetimeEnd": "2026-10-16 00:40:00",
+   "tz": "UTC",
+   "duration": "0時間50分",
+   "durationMinutes": 50,
+   "triggers": [
+    "Maintainance"
+   ],
+   "triggerNote": "",
+   "rootCauses": [
+    "resource-exhaustion"
+   ],
+   "summary": "INC20000287 GCP - Middle East (Dammam)",
+   "rootCause": "GCP Middle East（Dammam、me-central2）でSnowsightの読み込み遅延やクエリの断続遅延・失敗。公式の速報原因は、定期ソフトウェア更新により大量のバックグラウンドセットアップ処理が同時実行され、当該リージョンでクエリ処理を担う一部インフラのリソースが枯渇したこと。回避策はなし。詳細なRCAは5営業日以内に要約を公開予定と発表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 431,
+   "title": "Agentforce Performance Degradation | Salesforce Trust Status",
+   "url": "https://status.salesforce.com/incidents/20004491",
+   "provider": "Salesforce",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 00:40:00",
+   "datetimeEnd": "2026-10-16 01:19:00",
+   "tz": "UTC",
+   "duration": "0時間39分",
+   "durationMinutes": 39,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Agentforce Performance Degradation (20004491)",
+   "rootCause": "Salesforce Trustのインシデント20004491。Agentforceの性能劣化（agentforcePerformanceDegradation、minor）。公式の影響時間は2026-10-16 00:40–01:19 UTC。タイムライン上の原因説明はなく、根本原因は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 432,
+   "title": "Tableau Feature Degradation (Load a View) | Salesforce Trust Status",
+   "url": "https://status.salesforce.com/incidents/20004496",
+   "provider": "Tableau Cloud",
+   "date": "2026-10-13",
+   "year": 2026,
+   "datetimeBegin": "2026-10-13 18:36:00",
    "datetimeEnd": "",
    "tz": "UTC",
    "duration": "",
@@ -10253,8 +10525,122 @@ window.FAILURE_REPORTS = {
    "rootCauses": [
     "undetermined"
    ],
-   "summary": "Tableau Feature Degradation (Load a View)",
-   "rootCause": "Tableau Cloudの「ビューの読み込み」（Load a View）等で機能劣化。ダッシュボードやワークブックが読み込めない、「Loading data sources」で停止、または開くのに時間がかかる。影響範囲が当初より広いと更新。公式は最近の変更に起因し、データソース読み込み中にプロセスがデッドロックする可能性を指摘。修正は検証済みで本番展開中、関連機能の無効化緩和が継続。復旧ETAなし。報告時点では未解決。",
+   "summary": "Tableau Feature Degradation (calculated fields renamed on extracts)",
+   "rootCause": "Tableau Cloudで最近のリリース後、抽出（extract）ベースのデータソースで計算フィールド名が変更され、それらに依存するワークブックやダッシュボードが正しく表示されない。回避策はライブ接続への切り替え。修正は下位環境で検証済みで、本番残りのインスタンスへ展開中。公式の開始は2026-10-13 18:36 UTC、報告時点では未解決（endTime=null）。",
+   "extraUrl": "https://help.salesforce.com/s/issue?id=a02g700000BteHp",
+   "archived": false
+  },
+  {
+   "id": 433,
+   "title": "Delayed Costs data in the Compliance API",
+   "url": "https://status.openai.com/incidents/01M4XNQX7C6RCBNGX9H711WFSG",
+   "provider": "OpenAI",
+   "date": "2026-10-14",
+   "year": 2026,
+   "datetimeBegin": "2026-10-14 17:00:00",
+   "datetimeEnd": "2026-10-16 10:44:00",
+   "tz": "UTC",
+   "duration": "41時間44分",
+   "durationMinutes": 2504,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Delayed Costs data in the Compliance API",
+   "rootCause": "Compliance API（Costs API）で組織のコストデータの公開が遅延。APIおよびChatGPTの利用自体や他のレポート経路は影響なし。公式は原因を特定して修正をデプロイし、バックログ処理後に2026-10-16 10:44 UTCに完全復旧と発表。遅延の技術的な根本原因の詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 434,
+   "title": "Voice Call Silent and One-Way Audio from Gamma United Kingdom to a Subset of Twilio United Kingdom Phone Numbers",
+   "url": "https://status.twilio.com/incidents/6qmmhprpw5lq",
+   "provider": "Twilio",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 09:37:00",
+   "datetimeEnd": "2026-10-16 15:58:00",
+   "tz": "UTC",
+   "duration": "6時間21分",
+   "durationMinutes": 381,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "Voice Call Silent and One-Way Audio from Gamma United Kingdom to a Subset of Twilio United Kingdom Phone Numbers",
+   "rootCause": "英国Gamma網の加入者から、一部のTwilio英国電話番号向けの音声通話で無音・片通話が発生。公式は調査のうえ復旧を確認したと発表。原因の技術詳細は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 435,
+   "title": "【お詫び/第二報】緊急地震速報（緊急速報「エリアメール」）が配信されなかった事象について（10月17日午後0時30分時点） | お知らせ | NTTドコモ",
+   "url": "https://www.docomo.ne.jp/info/notice/page/261017_00_m.html",
+   "provider": "NTTドコモ",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 12:40:00",
+   "datetimeEnd": "",
+   "tz": "JST",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [
+    "Application bugs"
+   ],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "【お詫び/第二報】緊急地震速報（緊急速報「エリアメール」）が配信されなかった事象について（10月17日午後0時30分時点）",
+   "rootCause": "2026年10月16日午後0時40分頃、カムチャツカ半島付近の地震に伴い気象庁から配信された緊急地震速報について、従来と一部形式が異なるデータを受信し、ドコモ側システムが正しい情報と認識できなかったため、北海道・東北・北陸・関東・甲信・東海・伊豆諸島の対象地域に緊急速報「エリアメール」が配信されなかった。従来形式なら正常配信できることを確認。新形式でも配信できるよう対応中で、公式は10月17日中の対応完了を見込む。ページ時点ではシステム対応は完了していないため終了時刻は空欄。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 436,
+   "title": "MOTHOTEL「h01.mot-net.com」サーバ障害トラブルのお知らせ - クラウドPBX モッテル",
+   "url": "https://www.mot-net.com/news/version-upgrade/68517",
+   "provider": "MOT/HOTEL",
+   "date": "2026-10-16",
+   "year": 2026,
+   "datetimeBegin": "2026-10-16 13:20:00",
+   "datetimeEnd": "",
+   "tz": "JST",
+   "duration": "",
+   "durationMinutes": null,
+   "triggers": [],
+   "triggerNote": "",
+   "rootCauses": [
+    "hardware-failure"
+   ],
+   "summary": "MOTHOTEL「h01.mot-net.com」サーバ障害トラブルのお知らせ",
+   "rootCause": "MOT/HOTELサーバ『h01』（h01.mot-net.com）で電話の発着信ができない不具合。公式の発生時刻は2026/10/16 13時20分頃～。原因は調査中。終了時刻は未公表。",
+   "extraUrl": "",
+   "archived": false
+  },
+  {
+   "id": 437,
+   "title": "クレジットカード決済でのご利用について - お知らせ | U-NEXTヘルプセンター",
+   "url": "https://help.unext.jp/info-video/detail/info162c",
+   "provider": "U-NEXT",
+   "date": "2026-10-17",
+   "year": 2026,
+   "datetimeBegin": "2026-10-17 10:22:00",
+   "datetimeEnd": "2026-10-17 11:00:00",
+   "tz": "JST",
+   "duration": "0時間38分",
+   "durationMinutes": 38,
+   "triggers": [
+    "External failure"
+   ],
+   "triggerNote": "",
+   "rootCauses": [
+    "undetermined"
+   ],
+   "summary": "クレジットカード決済でのご利用について",
+   "rootCause": "2026年10月17日10時22分頃よりクレジットカード決済が利用しづらい事象が発生。公式は決済事業者より11:00頃に復旧を確認したと発表。原因の技術詳細は未公表だが、決済事業者側の障害。",
    "extraUrl": "",
    "archived": false
   }
