@@ -23,6 +23,7 @@ TRIGGER_LABELS = {
     "Misconfiguration": "設定ミス",
     "Request increase": "リクエスト増加",
     "External failure": "外部要因",
+    "Security": "セキュリティ",
 }
 TRIGGER_ALIASES = {"Maintenance": "Maintainance"}
 OTHER_TRIGGER = "Other"
@@ -122,15 +123,28 @@ def parse_date(value: str) -> str | None:
 
 
 def parse_triggers(value: str) -> tuple[list[str], str]:
-    """分類として使えるタグと、分類に当てはまらない自由記述を返す。"""
+    """分類として使えるタグと、分類に当てはまらない自由記述を返す。
+
+    カンマ区切りの既知ラベルは、1件のインシデントに複数付けられる。
+    既知ラベルと自由記述が混ざるときは既知ラベルを残し、自由記述だけを補足にする。
+    既知ラベルが一つも無ければ「その他」にする。
+    """
     value = (value or "").strip()
     if not value:
         return [], ""
     parts = [part.strip() for part in re.split(r"[,、]", value) if part.strip()]
-    tags = [TRIGGER_ALIASES.get(part, part) for part in parts]
-    if all(tag in TRIGGER_LABELS for tag in tags):
-        return list(dict.fromkeys(tags)), ""
-    return [OTHER_TRIGGER], value
+    tags: list[str] = []
+    notes: list[str] = []
+    for part in parts:
+        tag = TRIGGER_ALIASES.get(part, part)
+        if tag in TRIGGER_LABELS:
+            if tag not in tags:
+                tags.append(tag)
+        else:
+            notes.append(part)
+    if not tags:
+        return [OTHER_TRIGGER], value
+    return tags, "、".join(notes)
 
 
 def host_of(url: str) -> str:
@@ -138,6 +152,20 @@ def host_of(url: str) -> str:
         return (urlparse(url).hostname or "").lower()
     except ValueError:
         return ""
+
+
+GOOGLE_DOC_PROVIDERS = {
+    "1ScqXAdb6BjhsDzCo3qdPYbt1uULzgZqPO8zHeHHarS0": "GitLab",
+}
+
+
+def provider_from_google_doc(url: str) -> str:
+    """Google ドキュメントの掲載先ではなく、文書が書いているサービスの名前を返す。"""
+    text = url or ""
+    for doc_id, name in GOOGLE_DOC_PROVIDERS.items():
+        if doc_id in text:
+            return name
+    return ""
 
 
 def provider_from_host(host: str) -> str:
@@ -157,6 +185,10 @@ def provider_from_host(host: str) -> str:
 
 
 def display_provider(row: sqlite3.Row) -> str:
+    for url in (row["source_original"], row["scraped_url"], row["source2_original"]):
+        document_provider = provider_from_google_doc(url or "")
+        if document_provider:
+            return document_provider
     provider = (row["provider"] or "").strip()
     alias = PROVIDER_ALIASES.get(provider.lower())
     if alias:

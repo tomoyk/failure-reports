@@ -22,6 +22,11 @@ from incident_scraper import (
 
 def extract_provider_from_url(url: str) -> str:
     """URLからプロバイダー名を抽出する"""
+    from export_site_data import provider_from_google_doc
+
+    document_provider = provider_from_google_doc(url)
+    if document_provider:
+        return document_provider
     parsed = urlparse(url)
     domain = parsed.hostname or ""
     
