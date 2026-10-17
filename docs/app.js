@@ -286,11 +286,7 @@
     return providerCounts[b] - providerCounts[a] || a.localeCompare(b);
   });
 
-<<<<<<< HEAD
-  var state = { q: "", triggers: [], causes: [], providers: [], year: "", sort: "date-desc", analyzed: false };
-=======
-  var state = { q: "", triggers: [], provider: "", year: "", ttr: "", sort: "date-desc", analyzed: false };
->>>>>>> origin/main
+  var state = { q: "", triggers: [], causes: [], providers: [], year: "", ttr: "", sort: "date-desc", analyzed: false };
 
   function readUrl() {
     var params = new URLSearchParams(location.search);
@@ -329,11 +325,7 @@
   }
 
   function isFiltered() {
-<<<<<<< HEAD
-    return !!(state.q || state.triggers.length || state.causes.length || state.providers.length || state.year || state.analyzed);
-=======
-    return !!(state.q || state.triggers.length || state.provider || state.year || state.ttr || state.analyzed);
->>>>>>> origin/main
+    return !!(state.q || state.triggers.length || state.causes.length || state.providers.length || state.year || state.ttr || state.analyzed);
   }
 
   function searchTerms() {
@@ -458,19 +450,11 @@
 
     return h("article", { class: "card", style: { "--tone": tone(primaryKey(incident)) } }, [
       h("div", { class: "card-head" }, [
-<<<<<<< HEAD
         providerButton(incident.provider, regex),
-        h("time", { class: "date" + (date ? "" : " is-unknown"), datetime: incident.date || false, text: date || "日時不明" })
-=======
-        h("span", { class: "provider" }, [
-          avatar(incident.provider),
-          highlight(h("span", { class: "provider-name" }), incident.provider, regex)
-        ]),
         h("span", { class: "card-meta" }, [
           h("time", { class: "date" + (date ? "" : " is-unknown"), datetime: incident.date || false, text: date || "日時不明" }),
           incident.ttrMinutes != null ? h("span", { class: "ttr", text: formatMinutes(incident.ttrMinutes) }) : null
         ])
->>>>>>> origin/main
       ]),
       titleNode,
       cause
