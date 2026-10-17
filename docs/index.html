@@ -55,15 +55,20 @@
 
   <section class="container insights" aria-labelledby="insights-heading">
     <h2 id="insights-heading" class="visually-hidden">件数の内訳</h2>
-    <div class="panel">
+    <div class="panel panel-triggers">
       <h3>障害の引き金</h3>
       <p class="panel-note">クリックで絞り込み</p>
       <ul class="bars" id="trigger-bars"></ul>
     </div>
-    <div class="panel">
+    <div class="panel panel-year">
       <h3>発生年</h3>
       <p class="panel-note">クリックで絞り込み</p>
       <ul class="columns" id="year-columns"></ul>
+    </div>
+    <div class="panel panel-ttr">
+      <h3>障害時間（TTR）</h3>
+      <p class="panel-note" id="ttr-note">クリックで絞り込み</p>
+      <ul class="columns ttr-columns" id="ttr-columns"></ul>
     </div>
   </section>
 
@@ -98,6 +103,8 @@
         <select id="sort" name="sort">
           <option value="date-desc">発生日が新しい順</option>
           <option value="date-asc">発生日が古い順</option>
+          <option value="ttr-desc">障害時間が長い順</option>
+          <option value="ttr-asc">障害時間が短い順</option>
           <option value="provider">サービス名順</option>
         </select>
       </div>
